@@ -5,7 +5,7 @@ import SpeakerButton from './SpeakerButton';
 
 interface SoundPracticeCardProps {
   soundTitle: string;
-  phonetic: string;
+  phonetic?: string;
   phoneticSound: string;
   playbackSpeed: number;
   onGotIt: () => void;
