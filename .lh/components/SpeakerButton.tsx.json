@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/SpeakerButton.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1767726896585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1767726896585,
+            "name": "Commit-0",
+            "content": "interface SpeakerButtonProps {\r\n  onClick?: () => void;\r\n  size?: \"sm\" | \"md\" | \"lg\";\r\n  variant?: \"primary\" | \"secondary\";\r\n}\r\n\r\nexport default function SpeakerButton({\r\n  onClick,\r\n  size = \"md\",\r\n  variant = \"primary\",\r\n}: SpeakerButtonProps) {\r\n  const sizeClasses = {\r\n    sm: \"w-10 h-10\",\r\n    md: \"w-12 h-12\",\r\n    lg: \"w-16 h-16\",\r\n  };\r\n\r\n  const iconSizes = {\r\n    sm: \"w-5 h-5\",\r\n    md: \"w-6 h-6\",\r\n    lg: \"w-8 h-8\",\r\n  };\r\n\r\n  const variantClasses = {\r\n    primary: \"bg-green-500 hover:bg-green-600 text-white\",\r\n    secondary: \"bg-blue-500 hover:bg-blue-600 text-white\",\r\n  };\r\n\r\n  return (\r\n    <button\r\n      onClick={onClick}\r\n      className={`\r\n        ${sizeClasses[size]}\r\n        ${variantClasses[variant]}\r\n        flex items-center justify-center\r\n        rounded-full\r\n        transition-all\r\n        active:scale-95\r\n        shadow-md\r\n        hover:shadow-lg\r\n      `}\r\n      aria-label=\"Play pronunciation\"\r\n    >\r\n      <svg\r\n        className={iconSizes[size]}\r\n        fill=\"currentColor\"\r\n        viewBox=\"0 0 20 20\"\r\n      >\r\n        <path d=\"M10 3.75a.75.75 0 00-1.264-.546L4.703 7H3.167a.75.75 0 00-.75.75v4.5c0 .414.336.75.75.75h1.536l4.033 3.796A.75.75 0 0010 16.25V3.75zM12.78 7.22a.75.75 0 10-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z\" />\r\n      </svg>\r\n    </button>\r\n  );\r\n}\r\n"
+        }
+    ]
+}

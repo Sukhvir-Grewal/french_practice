@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/PracticeModeSelector.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1767726896590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1767726896590,
+            "name": "Commit-0",
+            "content": "'use client';\r\n\r\ninterface PracticeModeSelectorProps {\r\n  selectedMode: 'words' | 'sounds';\r\n  onModeChange: (mode: 'words' | 'sounds') => void;\r\n}\r\n\r\nexport default function PracticeModeSelector({ selectedMode, onModeChange }: PracticeModeSelectorProps) {\r\n  return (\r\n    <div className=\"bg-white rounded-3xl p-2 shadow-lg inline-flex gap-2\">\r\n      <button\r\n        onClick={() => onModeChange('words')}\r\n        className={`px-6 py-3 rounded-2xl font-bold text-base transition-all duration-200 ${\r\n          selectedMode === 'words'\r\n            ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-md'\r\n            : 'bg-transparent text-gray-600 hover:bg-gray-100'\r\n        }`}\r\n      >\r\n        📝 Practice Words\r\n      </button>\r\n      <button\r\n        onClick={() => onModeChange('sounds')}\r\n        className={`px-6 py-3 rounded-2xl font-bold text-base transition-all duration-200 ${\r\n          selectedMode === 'sounds'\r\n            ? 'bg-gradient-to-r from-purple-500 to-purple-600 text-white shadow-md'\r\n            : 'bg-transparent text-gray-600 hover:bg-gray-100'\r\n        }`}\r\n      >\r\n        🔊 Practice Sounds\r\n      </button>\r\n    </div>\r\n  );\r\n}\r\n"
+        }
+    ]
+}

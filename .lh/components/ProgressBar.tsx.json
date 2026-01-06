@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/ProgressBar.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1767726896587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1767726896587,
+            "name": "Commit-0",
+            "content": "interface ProgressBarProps {\r\n  current: number;\r\n  total: number;\r\n  showLabel?: boolean;\r\n}\r\n\r\nexport default function ProgressBar({\r\n  current,\r\n  total,\r\n  showLabel = true,\r\n}: ProgressBarProps) {\r\n  const percentage = (current / total) * 100;\r\n\r\n  return (\r\n    <div className=\"w-full\">\r\n      {/* Progress Label */}\r\n      {showLabel && (\r\n        <div className=\"flex justify-between items-center mb-2\">\r\n          <span className=\"text-sm font-semibold text-gray-700\">\r\n            Progress\r\n          </span>\r\n          <span className=\"text-sm font-bold text-green-600 transition-all duration-300\">\r\n            {current} / {total}\r\n          </span>\r\n        </div>\r\n      )}\r\n\r\n      {/* Progress Bar */}\r\n      <div className=\"w-full h-4 bg-gray-200 rounded-full overflow-hidden shadow-inner\">\r\n        <div\r\n          className=\"h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full transition-all duration-700 ease-out relative overflow-hidden\"\r\n          style={{ width: `${percentage}%` }}\r\n        >\r\n          {/* Shimmer effect */}\r\n          <div className=\"absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer\" />\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n"
+        }
+    ]
+}

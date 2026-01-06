@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/SpeedControl.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1767726896599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1767726896599,
+            "name": "Commit-0",
+            "content": "interface SpeedControlProps {\r\n  currentSpeed: number;\r\n  onSpeedChange: (speed: number) => void;\r\n}\r\n\r\nexport default function SpeedControl({\r\n  currentSpeed,\r\n  onSpeedChange,\r\n}: SpeedControlProps) {\r\n  const speeds = [\r\n    { value: 0.6, label: \"Slow\", icon: \"🐢\" },\r\n    { value: 0.8, label: \"Normal\", icon: \"🎯\" },\r\n    { value: 1.0, label: \"Fast\", icon: \"🚀\" },\r\n  ];\r\n\r\n  return (\r\n    <div className=\"bg-white rounded-2xl shadow-sm p-3 mb-4\">\r\n      <p className=\"text-xs text-gray-600 font-semibold mb-2 text-center\">\r\n        Playback Speed\r\n      </p>\r\n      <div className=\"flex gap-2 justify-center\">\r\n        {speeds.map((speed) => (\r\n          <button\r\n            key={speed.value}\r\n            onClick={() => onSpeedChange(speed.value)}\r\n            className={`\r\n              flex-1 py-2 px-3 rounded-xl text-sm font-semibold\r\n              transition-all duration-200 active:scale-95\r\n              ${\r\n                currentSpeed === speed.value\r\n                  ? \"bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-md\"\r\n                  : \"bg-gray-100 text-gray-700 hover:bg-gray-200\"\r\n              }\r\n            `}\r\n          >\r\n            <div className=\"flex flex-col items-center gap-1\">\r\n              <span className=\"text-base\">{speed.icon}</span>\r\n              <span className=\"text-xs\">{speed.label}</span>\r\n            </div>\r\n          </button>\r\n        ))}\r\n      </div>\r\n    </div>\r\n  );\r\n}\r\n"
+        }
+    ]
+}

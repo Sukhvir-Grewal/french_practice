@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/ModeToggle.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1767726896587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1767726896587,
+            "name": "Commit-0",
+            "content": "interface ModeToggleProps {\r\n  mode: \"learn\" | \"practice\";\r\n  onModeChange?: (mode: \"learn\" | \"practice\") => void;\r\n}\r\n\r\nexport default function ModeToggle({ mode, onModeChange }: ModeToggleProps) {\r\n  return (\r\n    <div className=\"flex gap-3 w-full max-w-md mx-auto\">\r\n      {/* Learn Mode Button */}\r\n      <button\r\n        onClick={() => onModeChange?.(\"learn\")}\r\n        className={`\r\n          flex-1 py-4 px-6 rounded-2xl font-bold text-lg\r\n          transition-all duration-200 active:scale-95\r\n          ${\r\n            mode === \"learn\"\r\n              ? \"bg-blue-500 text-white shadow-lg\"\r\n              : \"bg-gray-200 text-gray-600 hover:bg-gray-300\"\r\n          }\r\n        `}\r\n      >\r\n        <div className=\"flex items-center justify-center gap-2\">\r\n          <svg\r\n            className=\"w-6 h-6\"\r\n            fill=\"currentColor\"\r\n            viewBox=\"0 0 20 20\"\r\n          >\r\n            <path d=\"M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z\" />\r\n          </svg>\r\n          Learn\r\n        </div>\r\n      </button>\r\n\r\n      {/* Practice Mode Button */}\r\n      <button\r\n        onClick={() => onModeChange?.(\"practice\")}\r\n        className={`\r\n          flex-1 py-4 px-6 rounded-2xl font-bold text-lg\r\n          transition-all duration-200 active:scale-95\r\n          ${\r\n            mode === \"practice\"\r\n              ? \"bg-green-500 text-white shadow-lg\"\r\n              : \"bg-gray-200 text-gray-600 hover:bg-gray-300\"\r\n          }\r\n        `}\r\n      >\r\n        <div className=\"flex items-center justify-center gap-2\">\r\n          <svg\r\n            className=\"w-6 h-6\"\r\n            fill=\"currentColor\"\r\n            viewBox=\"0 0 20 20\"\r\n          >\r\n            <path\r\n              fillRule=\"evenodd\"\r\n              d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\"\r\n              clipRule=\"evenodd\"\r\n            />\r\n          </svg>\r\n          Practice\r\n        </div>\r\n      </button>\r\n    </div>\r\n  );\r\n}\r\n"
+        }
+    ]
+}
