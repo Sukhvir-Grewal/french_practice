@@ -116,6 +116,26 @@ export const soundsData: Sound[] = [
   },
 ];
 
+// Core French prepositions for dedicated training
+export const prepositionsData: Example[] = [
+  { french: "à", english: "to, at" },
+  { french: "avec", english: "with" },
+  { french: "pour", english: "for" },
+  { french: "dans", english: "in" },
+  { french: "en", english: "in (countries)" },
+  { french: "devant", english: "in front of" },
+  { french: "derrière", english: "behind" },
+  { french: "sous", english: "under" },
+  { french: "sur", english: "on" },
+  { french: "chez", english: "at someone’s place / house / office" },
+  { french: "de", english: "of, from" },
+  { french: "avant", english: "before" },
+  { french: "par", english: "by" },
+  { french: "pendant", english: "during" },
+  { french: "depuis", english: "since" },
+  { french: "vers", english: "towards" },
+];
+
 // Helper function to get all words for practice mode
 export const getAllWords = (): Example[] => {
   return soundsData.flatMap((sound) => sound.examples);
@@ -130,5 +150,11 @@ export const getSoundById = (id: number): Sound | undefined => {
 export const getRandomWords = (count: number): Example[] => {
   const allWords = getAllWords();
   const shuffled = [...allWords].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, count);
+};
+
+// Helper function to get random prepositions for preposition practice mode
+export const getRandomPrepositions = (count: number): Example[] => {
+  const shuffled = [...prepositionsData].sort(() => Math.random() - 0.5);
   return shuffled.slice(0, count);
 };

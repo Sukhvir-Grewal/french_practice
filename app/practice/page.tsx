@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getRandomWords, soundsData } from "@/lib/sounds-data";
+import { getRandomWords, getRandomPrepositions, soundsData, prepositionsData } from "@/lib/sounds-data";
 import type { Example, Sound } from "@/lib/sounds-data";
 import PracticeCard from "@/components/PracticeCard";
 import SoundPracticeCard from "@/components/SoundPracticeCard";
@@ -15,10 +15,13 @@ import {
   savePracticeSession,
 } from "@/lib/progress";
 
+type PracticeMode = 'words' | 'sounds' | 'prepositions';
+
 export default function PracticePage() {
-  const [practiceMode, setPracticeMode] = useState<'words' | 'sounds'>('words');
+  const [practiceMode, setPracticeMode] = useState<PracticeMode>('words');
   const [words, setWords] = useState<Example[]>([]);
   const [soundsToLearn, setSoundsToLearn] = useState<Sound[]>([]);
+  const [prepositions, setPrepositions] = useState<Example[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [translationRevealed, setTranslationRevealed] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
@@ -30,6 +33,17 @@ export default function PracticePage() {
   const [lastSpokenText, setLastSpokenText] = useState<string>("");
 
   const WORDS_PER_SESSION = 10;
+  const PREPOSITIONS_PER_SESSION = prepositionsData.length;
+
+  // Load mode from URL query once (e.g. /practice?mode=sounds)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const mode = new URLSearchParams(window.location.search).get('mode');
+    if (mode === 'sounds' || mode === 'prepositions' || mode === 'words') {
+      setPracticeMode(mode);
+    }
+  }, []);
 
   // Initialize practice session - runs once on mount and when mode changes
   useEffect(() => {
@@ -37,10 +51,13 @@ export default function PracticePage() {
     if (practiceMode === 'words') {
       const randomWords = getRandomWords(WORDS_PER_SESSION);
       setWords(randomWords);
-    } else {
+    } else if (practiceMode === 'sounds') {
       // For sounds mode, shuffle all sounds with timestamp to ensure uniqueness
       const shuffledSounds = [...soundsData].sort(() => Math.random() - 0.5);
       setSoundsToLearn(shuffledSounds);
+    } else {
+      const randomPrepositions = getRandomPrepositions(PREPOSITIONS_PER_SESSION);
+      setPrepositions(randomPrepositions);
     }
     // Load saved speed
     setSpeed(getPlaybackSpeed());
@@ -58,9 +75,11 @@ export default function PracticePage() {
     setWords(randomWords);
     const shuffledSounds = [...soundsData].sort(() => Math.random() - 0.5);
     setSoundsToLearn(shuffledSounds);
+    const randomPrepositions = getRandomPrepositions(PREPOSITIONS_PER_SESSION);
+    setPrepositions(randomPrepositions);
   }, []);
 
-  const currentWord = words[currentIndex];
+  const currentWord = practiceMode === 'prepositions' ? prepositions[currentIndex] : words[currentIndex];
   const currentSound = soundsToLearn[currentIndex];
 
   // Text-to-speech function with error handling and vibration
@@ -129,13 +148,24 @@ export default function PracticePage() {
 
   // Move to next word or complete session
   const moveToNext = () => {
-    const totalItems = practiceMode === 'words' ? words.length : soundsToLearn.length;
+    const totalItems =
+      practiceMode === 'words'
+        ? words.length
+        : practiceMode === 'sounds'
+          ? soundsToLearn.length
+          : prepositions.length;
+
     if (currentIndex < totalItems - 1) {
       setCurrentIndex(currentIndex + 1);
       setTranslationRevealed(false);
     } else {
       // Save session result
-      const sessionSize = practiceMode === 'words' ? WORDS_PER_SESSION : soundsToLearn.length;
+      const sessionSize =
+        practiceMode === 'words'
+          ? WORDS_PER_SESSION
+          : practiceMode === 'sounds'
+            ? soundsToLearn.length
+            : prepositions.length;
       savePracticeSession(correctCount, sessionSize);
       setSessionComplete(true);
     }
@@ -146,9 +176,12 @@ export default function PracticePage() {
     if (practiceMode === 'words') {
       const randomWords = getRandomWords(WORDS_PER_SESSION);
       setWords(randomWords);
-    } else {
+    } else if (practiceMode === 'sounds') {
       const shuffledSounds = [...soundsData].sort(() => Math.random() - 0.5);
       setSoundsToLearn(shuffledSounds);
+    } else {
+      const randomPrepositions = getRandomPrepositions(PREPOSITIONS_PER_SESSION);
+      setPrepositions(randomPrepositions);
     }
     setCurrentIndex(0);
     setCorrectCount(0);
@@ -161,7 +194,7 @@ export default function PracticePage() {
   useEffect(() => {
     if (autoPlay && !sessionComplete && currentWord) {
       const timer = setTimeout(() => {
-        if (practiceMode === 'words') {
+        if (practiceMode === 'words' || practiceMode === 'prepositions') {
           speak(currentWord.french);
         } else if (currentSound) {
           speak(currentSound.phoneticSound);
@@ -179,7 +212,7 @@ export default function PracticePage() {
       switch (event.key.toLowerCase()) {
         case ' ':
           event.preventDefault();
-          if (practiceMode === 'words' && currentWord) {
+          if ((practiceMode === 'words' || practiceMode === 'prepositions') && currentWord) {
             speak(currentWord.french);
           } else if (currentSound) {
             speak(currentSound.phoneticSound);
@@ -199,7 +232,7 @@ export default function PracticePage() {
           break;
         case 't':
           event.preventDefault();
-          if (practiceMode === 'words' && !translationRevealed) {
+          if ((practiceMode === 'words' || practiceMode === 'prepositions') && !translationRevealed) {
             handleRevealTranslation();
           }
           break;
@@ -237,7 +270,8 @@ export default function PracticePage() {
 
   // Loading state
   if ((practiceMode === 'words' && words.length === 0) || 
-      (practiceMode === 'sounds' && soundsToLearn.length === 0)) {
+      (practiceMode === 'sounds' && soundsToLearn.length === 0) ||
+      (practiceMode === 'prepositions' && prepositions.length === 0)) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-green-50 to-blue-50 flex items-center justify-center">
         <p className="text-xl text-gray-600">Loading practice session...</p>
@@ -247,7 +281,12 @@ export default function PracticePage() {
 
   // Session complete view
   if (sessionComplete) {
-    const totalItems = practiceMode === 'words' ? WORDS_PER_SESSION : soundsToLearn.length;
+    const totalItems =
+      practiceMode === 'words'
+        ? WORDS_PER_SESSION
+        : practiceMode === 'sounds'
+          ? soundsToLearn.length
+          : prepositions.length;
     const sessionTime = Math.floor((Date.now() - sessionStartTime) / 1000);
 
     return (
@@ -272,7 +311,12 @@ export default function PracticePage() {
   }
 
   // Calculate totals
-  const totalItems = practiceMode === 'words' ? WORDS_PER_SESSION : soundsToLearn.length;
+  const totalItems =
+    practiceMode === 'words'
+      ? WORDS_PER_SESSION
+      : practiceMode === 'sounds'
+        ? soundsToLearn.length
+        : PREPOSITIONS_PER_SESSION;
 
   // Practice view
   return (
@@ -344,6 +388,20 @@ export default function PracticePage() {
               onTryAgain={handleTryAgain}
               wordNumber={currentIndex + 1}
               totalWords={totalItems}
+              itemLabel="Word"
+            />
+          ) : practiceMode === 'prepositions' ? (
+            <PracticeCard
+              french={currentWord.french}
+              english={currentWord.english}
+              translationRevealed={translationRevealed}
+              onSpeak={() => speak(currentWord.french)}
+              onRevealTranslation={handleRevealTranslation}
+              onGotIt={handleGotIt}
+              onTryAgain={handleTryAgain}
+              wordNumber={currentIndex + 1}
+              totalWords={totalItems}
+              itemLabel="Preposition"
             />
           ) : (
             <SoundPracticeCard

@@ -8,6 +8,7 @@ interface PracticeCardProps {
   onTryAgain: () => void;
   wordNumber: number;
   totalWords: number;
+  itemLabel?: string;
 }
 
 export default function PracticeCard({
@@ -20,13 +21,14 @@ export default function PracticeCard({
   onTryAgain,
   wordNumber,
   totalWords,
+  itemLabel = "Word",
 }: PracticeCardProps) {
   return (
     <div className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 animate-scaleIn">
       {/* Word Counter */}
       <div className="text-center mb-6">
         <p className="text-sm text-gray-500 font-semibold">
-          Word {wordNumber} of {totalWords}
+          {itemLabel} {wordNumber} of {totalWords}
         </p>
       </div>
 
