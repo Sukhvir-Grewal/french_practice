@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { soundsData } from "@/lib/sounds-data";
+import { soundsData, numbersData } from "@/lib/sounds-data";
 import SoundCard from "@/components/SoundCard";
 import WordItem from "@/components/WordItem";
 import ProgressBar from "@/components/ProgressBar";
@@ -14,7 +14,10 @@ import {
   setPlaybackSpeed,
 } from "@/lib/progress";
 
+type LearnMode = 'sounds' | 'numbers';
+
 export default function LearnPage() {
+  const [learnMode, setLearnMode] = useState<LearnMode>('sounds');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [playbackSpeed, setSpeed] = useState(0.8);
   const [completedSounds, setCompletedSounds] = useState<number[]>([]);
@@ -140,14 +143,46 @@ export default function LearnPage() {
       <div className="sticky top-0 z-10 bg-white shadow-md px-4 py-4 transition-all duration-300">
         <div className="max-w-2xl mx-auto">
           <h1 className="text-2xl font-bold text-gray-800 mb-3 text-center">
-            Learn French Sounds
+            Learn French
           </h1>
-          <ProgressBar current={currentIndex + 1} total={totalSounds} />
+          
+          {/* Mode Toggle */}
+          <div className="flex justify-center mb-3">
+            <div className="bg-gray-100 rounded-2xl p-1.5 inline-flex gap-1.5">
+              <button
+                onClick={() => setLearnMode('sounds')}
+                className={`px-4 py-2 rounded-xl font-semibold text-sm transition-all duration-200 ${
+                  learnMode === 'sounds'
+                    ? 'bg-white text-blue-600 shadow-md'
+                    : 'text-gray-600 hover:text-gray-800'
+                }`}
+              >
+                🔊 Sounds
+              </button>
+              <button
+                onClick={() => setLearnMode('numbers')}
+                className={`px-4 py-2 rounded-xl font-semibold text-sm transition-all duration-200 ${
+                  learnMode === 'numbers'
+                    ? 'bg-white text-blue-600 shadow-md'
+                    : 'text-gray-600 hover:text-gray-800'
+                }`}
+              >
+                🔢 Numbers
+              </button>
+            </div>
+          </div>
+
+          {learnMode === 'sounds' && (
+            <ProgressBar current={currentIndex + 1} total={totalSounds} />
+          )}
         </div>
       </div>
 
       {/* Main Content */}
       <div className="max-w-2xl mx-auto px-4 py-6 sm:py-8">
+        {learnMode === 'sounds' ? (
+          <>
+            {/* Sounds Mode - existing content */}
         {/* Speed Control */}
         <SpeedControl
           currentSpeed={playbackSpeed}
@@ -282,6 +317,104 @@ export default function LearnPage() {
             <div><kbd className="px-2 py-1 bg-white rounded shadow">Q</kbd> Replay last</div>
           </div>
         </div>
+          </>
+        ) : (
+          <>
+            {/* Numbers Mode */}
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+                French Numbers
+              </h2>
+              <p className="text-gray-600 mb-6 text-center">
+                Learn to count in French. Click any number to hear its pronunciation.
+              </p>
+
+              {/* Speed Control */}
+              <SpeedControl
+                currentSpeed={playbackSpeed}
+                onSpeedChange={handleSpeedChange}
+              />
+
+              {/* Numbers 1-20 */}
+              <div className="bg-white rounded-3xl shadow-md p-6 mb-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                  <span className="text-2xl">🔢</span> Numbers 1-20
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Basic counting from one to twenty - these are essential!
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  {numbersData.filter(n => n.category === 'basic').map((num) => (
+                    <button
+                      key={num.number}
+                      onClick={() => speak(num.french)}
+                      className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-xl p-4 transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm hover:shadow-md"
+                    >
+                      <div className="text-3xl font-bold text-blue-600 mb-1">{num.number}</div>
+                      <div className="text-sm font-semibold text-gray-700">{num.french}</div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Tens (30-90) */}
+              <div className="bg-white rounded-3xl shadow-md p-6 mb-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                  <span className="text-2xl">📊</span> Tens (30-90)
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Key tens numbers - note the patterns in French!
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  {numbersData.filter(n => n.category === 'tens').map((num) => (
+                    <button
+                      key={num.number}
+                      onClick={() => speak(num.french)}
+                      className="bg-gradient-to-br from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 rounded-xl p-4 transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm hover:shadow-md"
+                    >
+                      <div className="text-3xl font-bold text-green-600 mb-1">{num.number}</div>
+                      <div className="text-sm font-semibold text-gray-700">{num.french}</div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Special Numbers */}
+              <div className="bg-white rounded-3xl shadow-md p-6 mb-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                  <span className="text-2xl">⭐</span> Special Numbers
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Important milestone numbers
+                </p>
+                <div className="grid grid-cols-2 gap-3">
+                  {numbersData.filter(n => n.category === 'special').map((num) => (
+                    <button
+                      key={num.number}
+                      onClick={() => speak(num.french)}
+                      className="bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 rounded-xl p-4 transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm hover:shadow-md"
+                    >
+                      <div className="text-3xl font-bold text-purple-600 mb-1">{num.number}</div>
+                      <div className="text-sm font-semibold text-gray-700">{num.french}</div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Learning Tips */}
+              <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-xl p-4">
+                <h4 className="font-bold text-yellow-800 mb-2">💡 Tips for Learning French Numbers</h4>
+                <ul className="text-sm text-yellow-800 space-y-1 list-disc list-inside">
+                  <li>Numbers 1-16 are unique and must be memorized</li>
+                  <li>17-19 follow the pattern "dix" + number (ten + number)</li>
+                  <li>70 = sixty-ten (soixante-dix), 80 = four-twenties (quatre-vingts)</li>
+                  <li>90 = four-twenty-ten (quatre-vingt-dix)</li>
+                  <li>Practice with the ranges in Practice mode!</li>
+                </ul>
+              </div>
+            </div>
+          </>
+        )}
       </div>
 
       {/* Floating Quick Replay Button */}

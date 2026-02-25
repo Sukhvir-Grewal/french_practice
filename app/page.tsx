@@ -47,8 +47,7 @@ export default function Home() {
         )}
 
         {/* Main Action Cards */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mb-8">
-          {/* Learn Sounds Card */}
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Link href="/learn">
             <div className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group">
               <div className="text-center">
@@ -56,10 +55,10 @@ export default function Home() {
                   📚
                 </div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-3">
-                  Learn Sounds
+                  Learn
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Browse French sound categories with examples and pronunciations
+                  Browse French sounds with examples and pronunciation guidance
                 </p>
                 <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white py-4 px-6 rounded-2xl font-bold text-lg group-hover:from-blue-600 group-hover:to-blue-700 transition-all">
                   Start Learning →
@@ -68,61 +67,20 @@ export default function Home() {
             </div>
           </Link>
 
-          {/* Practice Words Card */}
-          <Link href="/practice?mode=words">
+          <Link href="/practice">
             <div className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group">
               <div className="text-center">
                 <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">
-                  📝
+                  🧠
                 </div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-3">
-                  Practice Words
+                  Practice
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Test yourself with random French words and translations
+                  Choose your practice type: Sounds, Vocab, or Preposition
                 </p>
                 <div className="bg-gradient-to-r from-green-500 to-green-600 text-white py-4 px-6 rounded-2xl font-bold text-lg group-hover:from-green-600 group-hover:to-green-700 transition-all">
-                  Train Words →
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          {/* Practice Sounds Card */}
-          <Link href="/practice?mode=sounds">
-            <div className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group">
-              <div className="text-center">
-                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">
-                  🔊
-                </div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-3">
-                  Practice Sounds
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  Focus only on sound recognition in a separate practice flow
-                </p>
-                <div className="bg-gradient-to-r from-purple-500 to-purple-600 text-white py-4 px-6 rounded-2xl font-bold text-lg group-hover:from-purple-600 group-hover:to-purple-700 transition-all">
-                  Train Sounds →
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          {/* Prepositions Training Card */}
-          <Link href="/practice?mode=prepositions">
-            <div className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group">
-              <div className="text-center">
-                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">
-                  📌
-                </div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-3">
-                  Train Prepositions
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  Practice essential French prepositions with fast recall drills
-                </p>
-                <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 px-6 rounded-2xl font-bold text-lg group-hover:from-orange-600 group-hover:to-orange-700 transition-all">
-                  Start Prepositions →
+                  Start Practice →
                 </div>
               </div>
             </div>

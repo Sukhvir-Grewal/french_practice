@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1767726896588,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1772041013969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   onGotIt: () => void;\r\n   onTryAgain: () => void;\r\n   wordNumber: number;\r\n   totalWords: number;\r\n+  itemLabel?: string;\r\n }\r\n \r\n export default function PracticeCard({\r\n   french,\r\n@@ -19,15 +20,16 @@\n   onGotIt,\r\n   onTryAgain,\r\n   wordNumber,\r\n   totalWords,\r\n+  itemLabel = \"Word\",\r\n }: PracticeCardProps) {\r\n   return (\r\n     <div className=\"bg-white rounded-3xl shadow-xl p-6 sm:p-8 animate-scaleIn\">\r\n       {/* Word Counter */}\r\n       <div className=\"text-center mb-6\">\r\n         <p className=\"text-sm text-gray-500 font-semibold\">\r\n-          Word {wordNumber} of {totalWords}\r\n+          {itemLabel} {wordNumber} of {totalWords}\r\n         </p>\r\n       </div>\r\n \r\n       {/* French Word */}\r\n"
                 }
             ],
             "date": 1767726896588,

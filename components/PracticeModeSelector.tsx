@@ -16,7 +16,7 @@ export default function PracticeModeSelector({ selectedMode, onModeChange }: Pra
             : 'bg-transparent text-gray-600 hover:bg-gray-100'
         }`}
       >
-        📝 Practice Words
+        📝 Vocab
       </button>
       <button
         onClick={() => onModeChange('sounds')}
@@ -26,7 +26,7 @@ export default function PracticeModeSelector({ selectedMode, onModeChange }: Pra
             : 'bg-transparent text-gray-600 hover:bg-gray-100'
         }`}
       >
-        🔊 Practice Sounds
+        🔊 Sounds
       </button>
       <button
         onClick={() => onModeChange('prepositions')}
@@ -36,7 +36,7 @@ export default function PracticeModeSelector({ selectedMode, onModeChange }: Pra
             : 'bg-transparent text-gray-600 hover:bg-gray-100'
         }`}
       >
-        📌 Practice Prepositions
+        📌 Preposition
       </button>
     </div>
   );

@@ -180,3 +180,110 @@ export const getRandomPrepositions = (count: number): Example[] => {
   const shuffled = shuffleExamples(uniquePrepositions);
   return shuffled.slice(0, Math.min(count, shuffled.length));
 };
+
+// Numbers data for counting practice
+export interface NumberData {
+  number: number;
+  french: string;
+  category: 'basic' | 'tens' | 'special';
+}
+
+export const numbersData: NumberData[] = [
+  // 1-20 (basic counting)
+  { number: 1, french: "un", category: 'basic' },
+  { number: 2, french: "deux", category: 'basic' },
+  { number: 3, french: "trois", category: 'basic' },
+  { number: 4, french: "quatre", category: 'basic' },
+  { number: 5, french: "cinq", category: 'basic' },
+  { number: 6, french: "six", category: 'basic' },
+  { number: 7, french: "sept", category: 'basic' },
+  { number: 8, french: "huit", category: 'basic' },
+  { number: 9, french: "neuf", category: 'basic' },
+  { number: 10, french: "dix", category: 'basic' },
+  { number: 11, french: "onze", category: 'basic' },
+  { number: 12, french: "douze", category: 'basic' },
+  { number: 13, french: "treize", category: 'basic' },
+  { number: 14, french: "quatorze", category: 'basic' },
+  { number: 15, french: "quinze", category: 'basic' },
+  { number: 16, french: "seize", category: 'basic' },
+  { number: 17, french: "dix-sept", category: 'basic' },
+  { number: 18, french: "dix-huit", category: 'basic' },
+  { number: 19, french: "dix-neuf", category: 'basic' },
+  { number: 20, french: "vingt", category: 'basic' },
+  // Key tens
+  { number: 30, french: "trente", category: 'tens' },
+  { number: 40, french: "quarante", category: 'tens' },
+  { number: 50, french: "cinquante", category: 'tens' },
+  { number: 60, french: "soixante", category: 'tens' },
+  { number: 70, french: "soixante-dix", category: 'tens' },
+  { number: 80, french: "quatre-vingts", category: 'tens' },
+  { number: 90, french: "quatre-vingt-dix", category: 'tens' },
+  { number: 100, french: "cent", category: 'special' },
+  { number: 1000, french: "mille", category: 'special' },
+];
+
+// Generate number for a specific range
+export const generateNumberInRange = (min: number, max: number): { number: number; french: string } => {
+  const num = Math.floor(Math.random() * (max - min + 1)) + min;
+  return { number: num, french: convertNumberToFrench(num) };
+};
+
+// Convert number to French (simplified for common ranges)
+export const convertNumberToFrench = (num: number): string => {
+  // Find exact match first
+  const exact = numbersData.find(n => n.number === num);
+  if (exact) return exact.french;
+  
+  // For numbers not in our base list, construct them
+  if (num >= 1 && num <= 20) {
+    return numbersData.find(n => n.number === num)?.french || num.toString();
+  }
+  
+  if (num >= 21 && num <= 69) {
+    const tens = Math.floor(num / 10) * 10;
+    const ones = num % 10;
+    const tensWord = numbersData.find(n => n.number === tens)?.french;
+    const onesWord = ones > 0 ? numbersData.find(n => n.number === ones)?.french : '';
+    if (ones === 1 && tens !== 10) {
+      return `${tensWord}-et-un`;
+    }
+    return ones > 0 ? `${tensWord}-${onesWord}` : tensWord || num.toString();
+  }
+  
+  if (num >= 70 && num <= 79) {
+    const ones = num - 60;
+    const onesWord = numbersData.find(n => n.number === ones)?.french || convertNumberToFrench(ones);
+    return `soixante-${onesWord}`;
+  }
+  
+  if (num >= 80 && num <= 99) {
+    if (num === 80) return "quatre-vingts";
+    const ones = num - 80;
+    const onesWord = numbersData.find(n => n.number === ones)?.french || convertNumberToFrench(ones);
+    return `quatre-vingt-${onesWord}`;
+  }
+  
+  if (num >= 100 && num < 200) {
+    const remainder = num - 100;
+    if (remainder === 0) return "cent";
+    return `cent ${convertNumberToFrench(remainder)}`;
+  }
+  
+  if (num >= 200 && num < 1000) {
+    const hundreds = Math.floor(num / 100);
+    const remainder = num % 100;
+    const hundredsWord = numbersData.find(n => n.number === hundreds)?.french;
+    if (remainder === 0) return `${hundredsWord} cents`;
+    return `${hundredsWord} cent ${convertNumberToFrench(remainder)}`;
+  }
+  
+  return num.toString();
+};
+
+export const numberRanges = [
+  { label: '1-10', min: 1, max: 10 },
+  { label: '1-20', min: 1, max: 20 },
+  { label: '21-50', min: 21, max: 50 },
+  { label: '51-100', min: 51, max: 100 },
+  { label: '100-200', min: 100, max: 200 },
+];

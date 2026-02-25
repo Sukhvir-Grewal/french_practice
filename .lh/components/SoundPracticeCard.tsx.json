@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1767726896678,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1772041013976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import SpeakerButton from './SpeakerButton';\r\n \r\n interface SoundPracticeCardProps {\r\n   soundTitle: string;\r\n-  phonetic: string;\r\n+  phonetic?: string;\r\n   phoneticSound: string;\r\n   playbackSpeed: number;\r\n   onGotIt: () => void;\r\n   onTryAgain: () => void;\r\n"
                 }
             ],
             "date": 1767726896678,
