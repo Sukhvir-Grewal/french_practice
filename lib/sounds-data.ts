@@ -141,6 +141,27 @@ export const getAllWords = (): Example[] => {
   return soundsData.flatMap((sound) => sound.examples);
 };
 
+const shuffleExamples = (items: Example[]): Example[] => {
+  const shuffled = [...items];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
+const getUniqueExamples = (items: Example[]): Example[] => {
+  const seen = new Set<string>();
+  return items.filter((item) => {
+    const key = `${item.french.toLowerCase()}|${item.english.toLowerCase()}`;
+    if (seen.has(key)) {
+      return false;
+    }
+    seen.add(key);
+    return true;
+  });
+};
+
 // Helper function to get a specific sound by id
 export const getSoundById = (id: number): Sound | undefined => {
   return soundsData.find((sound) => sound.id === id);
@@ -148,13 +169,14 @@ export const getSoundById = (id: number): Sound | undefined => {
 
 // Helper function to get random words
 export const getRandomWords = (count: number): Example[] => {
-  const allWords = getAllWords();
-  const shuffled = [...allWords].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, count);
+  const allWords = getUniqueExamples(getAllWords());
+  const shuffled = shuffleExamples(allWords);
+  return shuffled.slice(0, Math.min(count, shuffled.length));
 };
 
 // Helper function to get random prepositions for preposition practice mode
 export const getRandomPrepositions = (count: number): Example[] => {
-  const shuffled = [...prepositionsData].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, count);
+  const uniquePrepositions = getUniqueExamples(prepositionsData);
+  const shuffled = shuffleExamples(uniquePrepositions);
+  return shuffled.slice(0, Math.min(count, shuffled.length));
 };

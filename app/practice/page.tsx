@@ -19,6 +19,7 @@ type PracticeMode = 'words' | 'sounds' | 'prepositions';
 
 export default function PracticePage() {
   const [practiceMode, setPracticeMode] = useState<PracticeMode>('words');
+  const [showModeMenu, setShowModeMenu] = useState(false);
   const [words, setWords] = useState<Example[]>([]);
   const [soundsToLearn, setSoundsToLearn] = useState<Sound[]>([]);
   const [prepositions, setPrepositions] = useState<Example[]>([]);
@@ -122,6 +123,11 @@ export default function PracticePage() {
   const handleSpeedChange = (speed: number) => {
     setSpeed(speed);
     setPlaybackSpeed(speed);
+  };
+
+  const handleModeChange = (mode: PracticeMode) => {
+    setPracticeMode(mode);
+    setShowModeMenu(false);
   };
 
   // Reveal translation
@@ -325,17 +331,35 @@ export default function PracticePage() {
       {/* Header with Progress */}
       <div className="sticky top-0 z-10 bg-white shadow-md px-4 py-4 transition-all duration-300">
         <div className="max-w-2xl mx-auto">
-          <h1 className="text-2xl font-bold text-gray-800 mb-3 text-center">
-            Practice Mode
-          </h1>
-          
-          {/* Mode Selector */}
-          <div className="flex justify-center mb-4">
-            <PracticeModeSelector 
-              selectedMode={practiceMode}
-              onModeChange={setPracticeMode}
-            />
+          <div className="flex items-center justify-between mb-3">
+            <h1 className="text-2xl font-bold text-gray-800">
+              Practice Mode
+            </h1>
+
+            <button
+              onClick={() => setShowModeMenu(!showModeMenu)}
+              className="w-11 h-11 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 flex items-center justify-center transition-all duration-200"
+              aria-label="Toggle practice mode options"
+              aria-expanded={showModeMenu}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {showModeMenu ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
           </div>
+
+          {showModeMenu && (
+            <div className="flex justify-center mb-4 animate-fadeIn">
+              <PracticeModeSelector
+                selectedMode={practiceMode}
+                onModeChange={handleModeChange}
+              />
+            </div>
+          )}
           
           <ProgressBar current={currentIndex + 1} total={totalItems} />
         </div>
