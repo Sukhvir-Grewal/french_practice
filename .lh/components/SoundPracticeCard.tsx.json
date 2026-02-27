@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1767726896678,
@@ -12,6 +12,10 @@
                 {
                     "date": 1772041013976,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import SpeakerButton from './SpeakerButton';\r\n \r\n interface SoundPracticeCardProps {\r\n   soundTitle: string;\r\n-  phonetic: string;\r\n+  phonetic?: string;\r\n   phoneticSound: string;\r\n   playbackSpeed: number;\r\n   onGotIt: () => void;\r\n   onTryAgain: () => void;\r\n"
+                },
+                {
+                    "date": 1772195756734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n 'use client';\r\n \r\n import { useState } from 'react';\r\n-import SpeakerButton from './SpeakerButton';\r\n \r\n interface SoundPracticeCardProps {\r\n   soundTitle: string;\r\n   phonetic?: string;\r\n   phoneticSound: string;\r\n   playbackSpeed: number;\r\n+  showSpeaker?: boolean;\r\n   onGotIt: () => void;\r\n   onTryAgain: () => void;\r\n }\r\n \r\n@@ -16,8 +16,9 @@\n   soundTitle,\r\n   phonetic,\r\n   phoneticSound,\r\n   playbackSpeed,\r\n+  showSpeaker = false,\r\n   onGotIt,\r\n   onTryAgain,\r\n }: SoundPracticeCardProps) {\r\n   const [showTitle, setShowTitle] = useState(false);\r\n@@ -36,22 +37,27 @@\n         <div className=\"mb-6\">\r\n           <div className=\"text-7xl font-bold text-blue-600 mb-4\">\r\n             {phoneticSound}\r\n           </div>\r\n-          <button\r\n-            onClick={playSound}\r\n-            className=\"w-20 h-20 mx-auto bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:from-blue-600 hover:to-blue-700 transition-all duration-200 active:scale-95 shadow-lg hover:shadow-xl flex items-center justify-center\"\r\n-          >\r\n-            <svg className=\"w-10 h-10\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\r\n-              <path d=\"M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l.917-3.917A6.959 6.959 0 012 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z\" />\r\n-            </svg>\r\n-          </button>\r\n+          {showSpeaker && (\r\n+            <button\r\n+              onClick={playSound}\r\n+              className=\"w-20 h-20 mx-auto bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:from-blue-600 hover:to-blue-700 transition-all duration-200 active:scale-95 shadow-lg hover:shadow-xl flex items-center justify-center\"\r\n+            >\r\n+              <svg className=\"w-10 h-10\" fill=\"currentColor\" viewBox=\"0 0 20 20\">\r\n+                <path d=\"M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l.917-3.917A6.959 6.959 0 012 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z\" />\r\n+              </svg>\r\n+            </button>\r\n+          )}\r\n         </div>\r\n \r\n         {/* Show Sound Title Button */}\r\n         {!showTitle && (\r\n           <button\r\n-            onClick={() => setShowTitle(true)}\r\n+            onClick={() => {\r\n+              setShowTitle(true);\r\n+              playSound();\r\n+            }}\r\n             className=\"text-blue-600 hover:text-blue-700 font-semibold underline text-lg\"\r\n           >\r\n             Show Sound Name\r\n           </button>\r\n"
                 }
             ],
             "date": 1767726896678,

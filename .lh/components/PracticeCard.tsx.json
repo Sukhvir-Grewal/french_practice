@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1767726896588,
@@ -12,6 +12,10 @@
                 {
                     "date": 1772041013969,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n   onGotIt: () => void;\r\n   onTryAgain: () => void;\r\n   wordNumber: number;\r\n   totalWords: number;\r\n+  itemLabel?: string;\r\n }\r\n \r\n export default function PracticeCard({\r\n   french,\r\n@@ -19,15 +20,16 @@\n   onGotIt,\r\n   onTryAgain,\r\n   wordNumber,\r\n   totalWords,\r\n+  itemLabel = \"Word\",\r\n }: PracticeCardProps) {\r\n   return (\r\n     <div className=\"bg-white rounded-3xl shadow-xl p-6 sm:p-8 animate-scaleIn\">\r\n       {/* Word Counter */}\r\n       <div className=\"text-center mb-6\">\r\n         <p className=\"text-sm text-gray-500 font-semibold\">\r\n-          Word {wordNumber} of {totalWords}\r\n+          {itemLabel} {wordNumber} of {totalWords}\r\n         </p>\r\n       </div>\r\n \r\n       {/* French Word */}\r\n"
+                },
+                {
+                    "date": 1772195756733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n   french: string;\r\n   english: string;\r\n   translationRevealed: boolean;\r\n   onSpeak: () => void;\r\n+  showSpeaker?: boolean;\r\n   onRevealTranslation: () => void;\r\n   onGotIt: () => void;\r\n   onTryAgain: () => void;\r\n   wordNumber: number;\r\n@@ -15,8 +16,9 @@\n   french,\r\n   english,\r\n   translationRevealed,\r\n   onSpeak,\r\n+  showSpeaker = false,\r\n   onRevealTranslation,\r\n   onGotIt,\r\n   onTryAgain,\r\n   wordNumber,\r\n@@ -37,22 +39,23 @@\n         <h2 className=\"text-5xl font-bold text-gray-900 mb-6\">\r\n           {french}\r\n         </h2>\r\n \r\n-        {/* Speaker Button */}\r\n-        <button\r\n-          onClick={onSpeak}\r\n-          className=\"w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-6 hover:bg-green-600 transition-all active:scale-90 shadow-lg hover:shadow-xl\"\r\n-          aria-label=\"Play pronunciation\"\r\n-        >\r\n-          <svg\r\n-            className=\"w-8 h-8\"\r\n-            fill=\"currentColor\"\r\n-            viewBox=\"0 0 20 20\"\r\n+        {showSpeaker && (\r\n+          <button\r\n+            onClick={onSpeak}\r\n+            className=\"w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-6 hover:bg-green-600 transition-all active:scale-90 shadow-lg hover:shadow-xl\"\r\n+            aria-label=\"Play pronunciation\"\r\n           >\r\n-            <path d=\"M10 3.75a.75.75 0 00-1.264-.546L4.703 7H3.167a.75.75 0 00-.75.75v4.5c0 .414.336.75.75.75h1.536l4.033 3.796A.75.75 0 0010 16.25V3.75zM12.78 7.22a.75.75 0 10-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z\" />\r\n-          </svg>\r\n-        </button>\r\n+            <svg\r\n+              className=\"w-8 h-8\"\r\n+              fill=\"currentColor\"\r\n+              viewBox=\"0 0 20 20\"\r\n+            >\r\n+              <path d=\"M10 3.75a.75.75 0 00-1.264-.546L4.703 7H3.167a.75.75 0 00-.75.75v4.5c0 .414.336.75.75.75h1.536l4.033 3.796A.75.75 0 0010 16.25V3.75zM12.78 7.22a.75.75 0 10-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z\" />\r\n+            </svg>\r\n+          </button>\r\n+        )}\r\n \r\n         {/* Translation (Hidden/Revealed) */}\r\n         <div className=\"min-h-[80px] flex items-center justify-center\">\r\n           {translationRevealed ? (\r\n"
                 }
             ],
             "date": 1767726896588,
