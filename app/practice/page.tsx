@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { getRandomWords, getRandomPrepositions, soundsData, prepositionsData, generateNumberInRange, numberRanges } from "@/lib/sounds-data";
+import { getRandomWords, getRandomPrepositions, getRandomDays, getRandomMonths, getRandomPossessives, getRandomDisjunctives, getRandomAllerForms, getRandomColors, getRandomAdjectives, getRandomPostNounAdjectives, getRandomPreNounAdjectives, soundsData, prepositionsData, daysOfWeekData, monthsOfYearData, possessiveAdjectivesData, disjunctivePronounsData, allerPresentData, colorsData, commonAdjectivesData, postNounAdjectivesData, preNounAdjectivesData, generateNumberInRange, numberRanges } from "@/lib/sounds-data";
 import type { Example, Sound } from "@/lib/sounds-data";
 import PracticeCard from "@/components/PracticeCard";
 import SoundPracticeCard from "@/components/SoundPracticeCard";
@@ -15,7 +15,7 @@ import {
   savePracticeSession,
 } from "@/lib/progress";
 
-type PracticeMode = 'words' | 'sounds' | 'prepositions' | 'numbers';
+type PracticeMode = 'words' | 'sounds' | 'prepositions' | 'numbers' | 'days' | 'months' | 'possessives' | 'disjunctive' | 'aller' | 'colors' | 'adjectives' | 'postadjectives' | 'preadjectives';
 type NumberRange = { label: string; min: number; max: number };
 
 export default function PracticePage() {
@@ -25,15 +25,25 @@ export default function PracticePage() {
   const [numbers, setNumbers] = useState<Array<{ number: number; french: string }>>([]);
   const [soundsToLearn, setSoundsToLearn] = useState<Sound[]>([]);
   const [prepositions, setPrepositions] = useState<Example[]>([]);
+  const [days, setDays] = useState<Example[]>([]);
+  const [months, setMonths] = useState<Example[]>([]);
+  const [possessives, setPossessives] = useState<Example[]>([]);
+  const [disjunctives, setDisjunctives] = useState<Example[]>([]);
+  const [allerForms, setAllerForms] = useState<Example[]>([]);
+  const [colors, setColors] = useState<Example[]>([]);
+  const [adjectives, setAdjectives] = useState<Example[]>([]);
+  const [postAdjectives, setPostAdjectives] = useState<Example[]>([]);
+  const [preAdjectives, setPreAdjectives] = useState<Example[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [translationRevealed, setTranslationRevealed] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
   const [sessionComplete, setSessionComplete] = useState(false);
+  const [infiniteMode, setInfiniteMode] = useState(false);
   const [playbackSpeed, setSpeed] = useState(0.8);
-  const [autoPlay, setAutoPlay] = useState(false);
+  const [autoPlay, setAutoPlay] = useState(true);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
   const [draftPlaybackSpeed, setDraftPlaybackSpeed] = useState(0.8);
-  const [draftAutoPlay, setDraftAutoPlay] = useState(false);
+  const [draftAutoPlay, setDraftAutoPlay] = useState(true);
   const [draftContinuousMode, setDraftContinuousMode] = useState(false);
   const [sessionStartTime, setSessionStartTime] = useState<number>(Date.now());
   const [continuousMode, setContinuousMode] = useState(false);
@@ -41,13 +51,22 @@ export default function PracticePage() {
 
   const WORDS_PER_SESSION = 10;
   const PREPOSITIONS_PER_SESSION = prepositionsData.length;
+  const DAYS_PER_SESSION = daysOfWeekData.length;
+  const MONTHS_PER_SESSION = monthsOfYearData.length;
+  const POSSESSIVES_PER_SESSION = possessiveAdjectivesData.length;
+  const DISJUNCTIVES_PER_SESSION = disjunctivePronounsData.length;
+  const ALLER_PER_SESSION = allerPresentData.length;
+  const COLORS_PER_SESSION = colorsData.length;
+  const ADJECTIVES_PER_SESSION = commonAdjectivesData.length;
+  const POST_ADJECTIVES_PER_SESSION = postNounAdjectivesData.length;
+  const PRE_ADJECTIVES_PER_SESSION = preNounAdjectivesData.length;
 
   // Load mode from URL query once (e.g. /practice?mode=sounds)
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
     const mode = new URLSearchParams(window.location.search).get('mode');
-    if (mode === 'sounds' || mode === 'prepositions' || mode === 'words' || mode === 'numbers') {
+    if (mode === 'sounds' || mode === 'prepositions' || mode === 'words' || mode === 'numbers' || mode === 'days' || mode === 'months' || mode === 'possessives' || mode === 'disjunctive' || mode === 'aller' || mode === 'colors' || mode === 'adjectives' || mode === 'postadjectives' || mode === 'preadjectives') {
       setPracticeMode(mode);
     }
   }, []);
@@ -67,6 +86,33 @@ export default function PracticePage() {
     } else if (practiceMode === 'prepositions') {
       const randomPrepositions = getRandomPrepositions(PREPOSITIONS_PER_SESSION);
       setPrepositions(randomPrepositions);
+    } else if (practiceMode === 'days') {
+      const randomDays = getRandomDays(DAYS_PER_SESSION);
+      setDays(randomDays);
+    } else if (practiceMode === 'months') {
+      const randomMonths = getRandomMonths(MONTHS_PER_SESSION);
+      setMonths(randomMonths);
+    } else if (practiceMode === 'possessives') {
+      const randomPossessives = getRandomPossessives(POSSESSIVES_PER_SESSION);
+      setPossessives(randomPossessives);
+    } else if (practiceMode === 'disjunctive') {
+      const randomDisjunctives = getRandomDisjunctives(DISJUNCTIVES_PER_SESSION);
+      setDisjunctives(randomDisjunctives);
+    } else if (practiceMode === 'aller') {
+      const randomAllerForms = getRandomAllerForms(ALLER_PER_SESSION);
+      setAllerForms(randomAllerForms);
+    } else if (practiceMode === 'colors') {
+      const randomColors = getRandomColors(COLORS_PER_SESSION);
+      setColors(randomColors);
+    } else if (practiceMode === 'adjectives') {
+      const randomAdjectives = getRandomAdjectives(ADJECTIVES_PER_SESSION);
+      setAdjectives(randomAdjectives);
+    } else if (practiceMode === 'postadjectives') {
+      const randomAdjectives = getRandomPostNounAdjectives(POST_ADJECTIVES_PER_SESSION);
+      setPostAdjectives(randomAdjectives);
+    } else if (practiceMode === 'preadjectives') {
+      const randomAdjectives = getRandomPreNounAdjectives(PRE_ADJECTIVES_PER_SESSION);
+      setPreAdjectives(randomAdjectives);
     } else if (practiceMode === 'numbers' && selectedNumberRange) {
       // Numbers handled by range selection
       return;
@@ -83,6 +129,24 @@ export default function PracticePage() {
   const currentWord =
     practiceMode === 'prepositions'
       ? { french: prepositions[currentIndex]?.english, english: prepositions[currentIndex]?.french }
+      : practiceMode === 'days'
+        ? { french: days[currentIndex]?.english, english: days[currentIndex]?.french }
+      : practiceMode === 'months'
+        ? { french: months[currentIndex]?.english, english: months[currentIndex]?.french }
+      : practiceMode === 'possessives'
+        ? { french: possessives[currentIndex]?.english, english: possessives[currentIndex]?.french }
+      : practiceMode === 'disjunctive'
+        ? { french: disjunctives[currentIndex]?.english, english: disjunctives[currentIndex]?.french }
+      : practiceMode === 'aller'
+        ? { french: allerForms[currentIndex]?.english, english: allerForms[currentIndex]?.french }
+      : practiceMode === 'colors'
+        ? { french: colors[currentIndex]?.english, english: colors[currentIndex]?.french }
+      : practiceMode === 'adjectives'
+        ? { french: adjectives[currentIndex]?.english, english: adjectives[currentIndex]?.french }
+      : practiceMode === 'postadjectives'
+        ? { french: postAdjectives[currentIndex]?.english, english: postAdjectives[currentIndex]?.french }
+      : practiceMode === 'preadjectives'
+        ? { french: preAdjectives[currentIndex]?.english, english: preAdjectives[currentIndex]?.french }
       : practiceMode === 'words'
         ? { french: words[currentIndex]?.english, english: words[currentIndex]?.french }
         : practiceMode === 'numbers'
@@ -94,16 +158,52 @@ export default function PracticePage() {
       ? 'Sounds'
       : practiceMode === 'prepositions'
         ? 'Preposition'
+        : practiceMode === 'days'
+          ? 'Days'
+        : practiceMode === 'months'
+          ? 'Months'
+        : practiceMode === 'possessives'
+          ? 'Possessives'
+        : practiceMode === 'disjunctive'
+          ? 'Disjunctive'
+        : practiceMode === 'aller'
+          ? 'Aller'
+        : practiceMode === 'colors'
+          ? 'Colors'
+        : practiceMode === 'adjectives'
+          ? 'Adjectives'
+        : practiceMode === 'postadjectives'
+          ? 'Adjectives After Noun'
+        : practiceMode === 'preadjectives'
+          ? 'Adjectives Before Noun'
         : practiceMode === 'numbers'
           ? 'Numbers'
           : 'Vocab';
 
+  const getLearnModeFromPracticeMode = (mode: PracticeMode) => {
+    if (mode === 'words') return 'vocab';
+    return mode;
+  };
+
+  const normalizeSpeechText = (text?: string) => {
+    if (!text || typeof text !== "string") return "";
+    const normalized = text.trim().toLowerCase();
+    if (normalized === "à") return "à Paris";
+    if (normalized === "en") return "en France";
+    if (normalized === "de") return "de Paris";
+    if (normalized === "où") return "où est la gare";
+    return text;
+  };
+
   // Text-to-speech function with error handling and vibration
-  const speak = (text: string) => {
+  const speak = (text?: string) => {
     if (typeof window !== "undefined" && window.speechSynthesis) {
       try {
+        if (!text || !text.trim()) return;
         window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(text);
+        const speechText = normalizeSpeechText(text);
+        if (!speechText) return;
+        const utterance = new SpeechSynthesisUtterance(speechText);
         utterance.lang = "fr-FR";
         utterance.rate = playbackSpeed;
         
@@ -115,7 +215,7 @@ export default function PracticePage() {
         };
         
         window.speechSynthesis.speak(utterance);
-        setLastSpokenText(text);
+        setLastSpokenText(speechText);
         
         // Haptic feedback on mobile
         if ('vibrate' in navigator) {
@@ -184,21 +284,16 @@ export default function PracticePage() {
   // Reveal translation
   const handleRevealTranslation = () => {
     setTranslationRevealed(true);
+    if (autoPlay && currentWord?.english) {
+      speak(currentWord.english);
+    }
   };
 
-  // Handle "I Got It!" button
-  const handleGotIt = () => {
+  // Handle Next button
+  const handleNext = () => {
     setCorrectCount(correctCount + 1);
     if ('vibrate' in navigator) {
       navigator.vibrate([50, 30, 50]); // Success pattern
-    }
-    moveToNext();
-  };
-
-  // Handle "Try Again" button
-  const handleTryAgain = () => {
-    if ('vibrate' in navigator) {
-      navigator.vibrate(30); // Short vibration
     }
     moveToNext();
   };
@@ -212,9 +307,69 @@ export default function PracticePage() {
         ? words.length
         : practiceMode === 'sounds'
           ? soundsToLearn.length
+          : practiceMode === 'days'
+            ? days.length
+          : practiceMode === 'months'
+            ? months.length
+          : practiceMode === 'possessives'
+            ? possessives.length
+          : practiceMode === 'disjunctive'
+            ? disjunctives.length
+          : practiceMode === 'aller'
+            ? allerForms.length
+          : practiceMode === 'colors'
+            ? colors.length
+          : practiceMode === 'adjectives'
+            ? adjectives.length
+          : practiceMode === 'postadjectives'
+            ? postAdjectives.length
+          : practiceMode === 'preadjectives'
+            ? preAdjectives.length
           : practiceMode === 'numbers'
             ? numbers.length
             : prepositions.length;
+
+    if (infiniteMode) {
+      if (currentIndex < totalItems - 1) {
+        setCurrentIndex(currentIndex + 1);
+        setTranslationRevealed(false);
+      } else {
+        if (practiceMode === 'words') {
+          setWords(getRandomWords(WORDS_PER_SESSION));
+        } else if (practiceMode === 'sounds') {
+          setSoundsToLearn([...soundsData].sort(() => Math.random() - 0.5));
+        } else if (practiceMode === 'days') {
+          setDays(getRandomDays(DAYS_PER_SESSION));
+        } else if (practiceMode === 'months') {
+          setMonths(getRandomMonths(MONTHS_PER_SESSION));
+        } else if (practiceMode === 'possessives') {
+          setPossessives(getRandomPossessives(POSSESSIVES_PER_SESSION));
+        } else if (practiceMode === 'disjunctive') {
+          setDisjunctives(getRandomDisjunctives(DISJUNCTIVES_PER_SESSION));
+        } else if (practiceMode === 'aller') {
+          setAllerForms(getRandomAllerForms(ALLER_PER_SESSION));
+        } else if (practiceMode === 'colors') {
+          setColors(getRandomColors(COLORS_PER_SESSION));
+        } else if (practiceMode === 'adjectives') {
+          setAdjectives(getRandomAdjectives(ADJECTIVES_PER_SESSION));
+        } else if (practiceMode === 'postadjectives') {
+          setPostAdjectives(getRandomPostNounAdjectives(POST_ADJECTIVES_PER_SESSION));
+        } else if (practiceMode === 'preadjectives') {
+          setPreAdjectives(getRandomPreNounAdjectives(PRE_ADJECTIVES_PER_SESSION));
+        } else if (practiceMode === 'numbers' && selectedNumberRange) {
+          const generatedNumbers = [];
+          for (let i = 0; i < 10; i++) {
+            generatedNumbers.push(generateNumberInRange(selectedNumberRange.min, selectedNumberRange.max));
+          }
+          setNumbers(generatedNumbers);
+        } else if (practiceMode === 'prepositions') {
+          setPrepositions(getRandomPrepositions(PREPOSITIONS_PER_SESSION));
+        }
+        setCurrentIndex(0);
+        setTranslationRevealed(false);
+      }
+      return;
+    }
 
     if (currentIndex < totalItems - 1) {
       setCurrentIndex(currentIndex + 1);
@@ -226,6 +381,24 @@ export default function PracticePage() {
           ? WORDS_PER_SESSION
           : practiceMode === 'sounds'
             ? soundsToLearn.length
+            : practiceMode === 'days'
+              ? days.length
+            : practiceMode === 'months'
+              ? months.length
+            : practiceMode === 'possessives'
+              ? possessives.length
+            : practiceMode === 'disjunctive'
+              ? disjunctives.length
+            : practiceMode === 'aller'
+              ? allerForms.length
+            : practiceMode === 'colors'
+              ? colors.length
+            : practiceMode === 'adjectives'
+              ? adjectives.length
+            : practiceMode === 'postadjectives'
+              ? postAdjectives.length
+            : practiceMode === 'preadjectives'
+              ? preAdjectives.length
             : practiceMode === 'numbers'
               ? numbers.length
               : prepositions.length;
@@ -244,6 +417,33 @@ export default function PracticePage() {
     } else if (practiceMode === 'sounds') {
       const shuffledSounds = [...soundsData].sort(() => Math.random() - 0.5);
       setSoundsToLearn(shuffledSounds);
+    } else if (practiceMode === 'days') {
+      const randomDays = getRandomDays(DAYS_PER_SESSION);
+      setDays(randomDays);
+    } else if (practiceMode === 'months') {
+      const randomMonths = getRandomMonths(MONTHS_PER_SESSION);
+      setMonths(randomMonths);
+    } else if (practiceMode === 'possessives') {
+      const randomPossessives = getRandomPossessives(POSSESSIVES_PER_SESSION);
+      setPossessives(randomPossessives);
+    } else if (practiceMode === 'disjunctive') {
+      const randomDisjunctives = getRandomDisjunctives(DISJUNCTIVES_PER_SESSION);
+      setDisjunctives(randomDisjunctives);
+    } else if (practiceMode === 'aller') {
+      const randomAllerForms = getRandomAllerForms(ALLER_PER_SESSION);
+      setAllerForms(randomAllerForms);
+    } else if (practiceMode === 'colors') {
+      const randomColors = getRandomColors(COLORS_PER_SESSION);
+      setColors(randomColors);
+    } else if (practiceMode === 'adjectives') {
+      const randomAdjectives = getRandomAdjectives(ADJECTIVES_PER_SESSION);
+      setAdjectives(randomAdjectives);
+    } else if (practiceMode === 'postadjectives') {
+      const randomAdjectives = getRandomPostNounAdjectives(POST_ADJECTIVES_PER_SESSION);
+      setPostAdjectives(randomAdjectives);
+    } else if (practiceMode === 'preadjectives') {
+      const randomAdjectives = getRandomPreNounAdjectives(PRE_ADJECTIVES_PER_SESSION);
+      setPreAdjectives(randomAdjectives);
     } else if (practiceMode === 'numbers' && selectedNumberRange) {
       const generatedNumbers = [];
       for (let i = 0; i < 10; i++) {
@@ -261,20 +461,6 @@ export default function PracticePage() {
     setSessionStartTime(Date.now());
   };
 
-  // Auto-play when new card appears
-  useEffect(() => {
-    if (autoPlay && !sessionComplete && practiceMode && currentWord) {
-      const timer = setTimeout(() => {
-        if (practiceMode === 'words' || practiceMode === 'prepositions' || practiceMode === 'numbers') {
-          speak(currentWord.english);
-        } else if (currentSound) {
-          speak(currentSound.phoneticSound);
-        }
-      }, 500);
-      return () => clearTimeout(timer);
-    }
-  }, [currentIndex, autoPlay, sessionComplete, practiceMode]);
-
   // Keyboard shortcuts
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
@@ -283,7 +469,7 @@ export default function PracticePage() {
       switch (event.key.toLowerCase()) {
         case ' ':
           event.preventDefault();
-          if ((practiceMode === 'words' || practiceMode === 'prepositions' || practiceMode === 'numbers') && currentWord) {
+          if ((practiceMode === 'words' || practiceMode === 'prepositions' || practiceMode === 'numbers' || practiceMode === 'days' || practiceMode === 'months' || practiceMode === 'possessives' || practiceMode === 'disjunctive' || practiceMode === 'aller' || practiceMode === 'colors' || practiceMode === 'adjectives' || practiceMode === 'postadjectives' || practiceMode === 'preadjectives') && currentWord) {
             speak(currentWord.english);
           } else if (currentSound) {
             speak(currentSound.phoneticSound);
@@ -292,18 +478,18 @@ export default function PracticePage() {
         case 'enter':
           event.preventDefault();
           if (translationRevealed || practiceMode === 'sounds') {
-            handleGotIt();
+            handleNext();
           }
           break;
         case 'r':
           event.preventDefault();
           if (translationRevealed || practiceMode === 'sounds') {
-            handleTryAgain();
+            handleNext();
           }
           break;
         case 't':
           event.preventDefault();
-          if ((practiceMode === 'words' || practiceMode === 'prepositions' || practiceMode === 'numbers') && !translationRevealed) {
+          if ((practiceMode === 'words' || practiceMode === 'prepositions' || practiceMode === 'numbers' || practiceMode === 'days' || practiceMode === 'months' || practiceMode === 'possessives' || practiceMode === 'disjunctive' || practiceMode === 'aller' || practiceMode === 'colors' || practiceMode === 'adjectives' || practiceMode === 'postadjectives' || practiceMode === 'preadjectives') && !translationRevealed) {
             handleRevealTranslation();
           }
           break;
@@ -404,6 +590,132 @@ export default function PracticePage() {
                 </div>
               </div>
             </button>
+
+            <button
+              onClick={() => handleModeChange('days')}
+              className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group"
+            >
+              <div className="text-center">
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">📅</div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-3">Days</h2>
+                <p className="text-gray-600 mb-6">Practice days of the week in French</p>
+                <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white py-3 px-6 rounded-2xl font-bold group-hover:from-teal-600 group-hover:to-teal-700 transition-all">
+                  Start Days →
+                </div>
+              </div>
+            </button>
+
+            <button
+              onClick={() => handleModeChange('months')}
+              className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group"
+            >
+              <div className="text-center">
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">🗓️</div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-3">Months</h2>
+                <p className="text-gray-600 mb-6">Practice months of the year in French</p>
+                <div className="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white py-3 px-6 rounded-2xl font-bold group-hover:from-indigo-600 group-hover:to-indigo-700 transition-all">
+                  Start Months →
+                </div>
+              </div>
+            </button>
+
+            <button
+              onClick={() => handleModeChange('possessives')}
+              className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group"
+            >
+              <div className="text-center">
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">🧩</div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-3">Possessive</h2>
+                <p className="text-gray-600 mb-6">Practice mon/ma/mes, ton/ta/tes and more</p>
+                <div className="bg-gradient-to-r from-pink-500 to-pink-600 text-white py-3 px-6 rounded-2xl font-bold group-hover:from-pink-600 group-hover:to-pink-700 transition-all">
+                  Start Possessive →
+                </div>
+              </div>
+            </button>
+
+            <button
+              onClick={() => handleModeChange('disjunctive')}
+              className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group"
+            >
+              <div className="text-center">
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">🗣️</div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-3">Disjunctive</h2>
+                <p className="text-gray-600 mb-6">Practice stressed pronouns like moi, toi, lui</p>
+                <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white py-3 px-6 rounded-2xl font-bold group-hover:from-cyan-600 group-hover:to-cyan-700 transition-all">
+                  Start Disjunctive →
+                </div>
+              </div>
+            </button>
+
+            <button
+              onClick={() => handleModeChange('aller')}
+              className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group"
+            >
+              <div className="text-center">
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">🚶</div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-3">Aller</h2>
+                <p className="text-gray-600 mb-6">Practice present tense forms of aller</p>
+                <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-3 px-6 rounded-2xl font-bold group-hover:from-emerald-600 group-hover:to-emerald-700 transition-all">
+                  Start Aller →
+                </div>
+              </div>
+            </button>
+
+            <button
+              onClick={() => handleModeChange('colors')}
+              className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group"
+            >
+              <div className="text-center">
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">🎨</div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-3">Colors</h2>
+                <p className="text-gray-600 mb-6">Practice color names and forms in French</p>
+                <div className="bg-gradient-to-r from-fuchsia-500 to-fuchsia-600 text-white py-3 px-6 rounded-2xl font-bold group-hover:from-fuchsia-600 group-hover:to-fuchsia-700 transition-all">
+                  Start Colors →
+                </div>
+              </div>
+            </button>
+
+            <button
+              onClick={() => handleModeChange('adjectives')}
+              className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group"
+            >
+              <div className="text-center">
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">Aa</div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-3">Adjectives</h2>
+                <p className="text-gray-600 mb-6">Practice masculine [m] and feminine [f] forms</p>
+                <div className="bg-gradient-to-r from-amber-500 to-sky-500 text-white py-3 px-6 rounded-2xl font-bold group-hover:from-amber-600 group-hover:to-sky-600 transition-all">
+                  Start Adjectives →
+                </div>
+              </div>
+            </button>
+
+            <button
+              onClick={() => handleModeChange('postadjectives')}
+              className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group"
+            >
+              <div className="text-center">
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">A+</div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-3">Adj After Noun</h2>
+                <p className="text-gray-600 mb-6">Practice personality and quality adjectives</p>
+                <div className="bg-gradient-to-r from-violet-500 to-violet-600 text-white py-3 px-6 rounded-2xl font-bold group-hover:from-violet-600 group-hover:to-violet-700 transition-all">
+                  Start Topic →
+                </div>
+              </div>
+            </button>
+
+            <button
+              onClick={() => handleModeChange('preadjectives')}
+              className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group"
+            >
+              <div className="text-center">
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">A-</div>
+                <h2 className="text-3xl font-bold text-gray-800 mb-3">Adj Before Noun</h2>
+                <p className="text-gray-600 mb-6">Practice BAGS adjectives before nouns</p>
+                <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white py-3 px-6 rounded-2xl font-bold group-hover:from-cyan-600 group-hover:to-cyan-700 transition-all">
+                  Start Topic →
+                </div>
+              </div>
+            </button>
           </div>
 
           <div className="text-center">
@@ -459,6 +771,15 @@ export default function PracticePage() {
   if ((practiceMode === 'words' && words.length === 0) || 
       (practiceMode === 'sounds' && soundsToLearn.length === 0) ||
       (practiceMode === 'numbers' && numbers.length === 0) ||
+      (practiceMode === 'days' && days.length === 0) ||
+      (practiceMode === 'months' && months.length === 0) ||
+      (practiceMode === 'possessives' && possessives.length === 0) ||
+      (practiceMode === 'disjunctive' && disjunctives.length === 0) ||
+      (practiceMode === 'aller' && allerForms.length === 0) ||
+      (practiceMode === 'colors' && colors.length === 0) ||
+      (practiceMode === 'adjectives' && adjectives.length === 0) ||
+      (practiceMode === 'postadjectives' && postAdjectives.length === 0) ||
+      (practiceMode === 'preadjectives' && preAdjectives.length === 0) ||
       (practiceMode === 'prepositions' && prepositions.length === 0)) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-green-50 to-blue-50 flex items-center justify-center">
@@ -474,6 +795,24 @@ export default function PracticePage() {
         ? WORDS_PER_SESSION
         : practiceMode === 'sounds'
           ? soundsToLearn.length
+          : practiceMode === 'days'
+            ? days.length
+          : practiceMode === 'months'
+            ? months.length
+          : practiceMode === 'possessives'
+            ? possessives.length
+          : practiceMode === 'disjunctive'
+            ? disjunctives.length
+          : practiceMode === 'aller'
+            ? allerForms.length
+          : practiceMode === 'colors'
+            ? colors.length
+          : practiceMode === 'adjectives'
+            ? adjectives.length
+          : practiceMode === 'postadjectives'
+            ? postAdjectives.length
+          : practiceMode === 'preadjectives'
+            ? preAdjectives.length
           : practiceMode === 'numbers'
             ? numbers.length
             : prepositions.length;
@@ -490,11 +829,6 @@ export default function PracticePage() {
             onRestart={handleRestart}
             onBackHome={() => (window.location.href = "/")}
           />
-          {continuousMode && (
-            <div className="mt-4 text-center text-gray-600 animate-pulse-subtle">
-              <p>🔄 Continuous mode: Next session starts in 3 seconds...</p>
-            </div>
-          )}
         </div>
       </div>
     );
@@ -506,6 +840,24 @@ export default function PracticePage() {
       ? WORDS_PER_SESSION
       : practiceMode === 'sounds'
         ? soundsToLearn.length
+      : practiceMode === 'days'
+          ? days.length
+      : practiceMode === 'months'
+          ? months.length
+      : practiceMode === 'possessives'
+          ? possessives.length
+      : practiceMode === 'disjunctive'
+          ? disjunctives.length
+      : practiceMode === 'aller'
+          ? allerForms.length
+      : practiceMode === 'colors'
+          ? colors.length
+      : practiceMode === 'adjectives'
+          ? adjectives.length
+        : practiceMode === 'postadjectives'
+          ? postAdjectives.length
+          : practiceMode === 'preadjectives'
+            ? preAdjectives.length
         : practiceMode === 'numbers'
           ? numbers.length
           : PREPOSITIONS_PER_SESSION;
@@ -523,9 +875,40 @@ export default function PracticePage() {
             </h1>
           </div>
 
+          <div className="flex justify-center mb-3">
+            <div className="inline-flex rounded-xl bg-gray-100 p-1">
+              <Link
+                href={`/learn?mode=${getLearnModeFromPracticeMode(practiceMode)}`}
+                className="px-4 py-1.5 rounded-lg text-sm font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200"
+              >
+                Learn
+              </Link>
+              <button className="px-4 py-1.5 rounded-lg bg-green-500 text-white text-sm font-semibold">
+                Practice
+              </button>
+            </div>
+          </div>
+
+          <div className="flex justify-center mb-3">
+            <button
+              onClick={() => setInfiniteMode(!infiniteMode)}
+              className={`px-4 py-2 rounded-xl font-semibold transition-all duration-200 ${
+                infiniteMode
+                  ? "bg-red-500 text-white hover:bg-red-600"
+                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+              }`}
+            >
+              ∞ Infinity: {infiniteMode ? "ON" : "OFF"}
+            </button>
+          </div>
+
           <div className="flex items-end gap-3">
             <div className="flex-1">
-              <ProgressBar current={currentIndex + 1} total={totalItems} />
+              <ProgressBar
+                current={infiniteMode ? totalItems : currentIndex + 1}
+                total={totalItems}
+                isInfinite={infiniteMode}
+              />
             </div>
             <button
               onClick={openSettingsModal}
@@ -555,9 +938,9 @@ export default function PracticePage() {
               english={currentWord!.english}
               translationRevealed={translationRevealed}
               onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
               onRevealTranslation={handleRevealTranslation}
-              onGotIt={handleGotIt}
-              onTryAgain={handleTryAgain}
+              onNext={handleNext}
               wordNumber={currentIndex + 1}
               totalWords={totalItems}
               itemLabel="Word"
@@ -568,9 +951,9 @@ export default function PracticePage() {
               english={currentWord!.english}
               translationRevealed={translationRevealed}
               onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
               onRevealTranslation={handleRevealTranslation}
-              onGotIt={handleGotIt}
-              onTryAgain={handleTryAgain}
+              onNext={handleNext}
               wordNumber={currentIndex + 1}
               totalWords={totalItems}
               itemLabel="Preposition"
@@ -581,12 +964,129 @@ export default function PracticePage() {
               english={currentWord!.english}
               translationRevealed={translationRevealed}
               onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
               onRevealTranslation={handleRevealTranslation}
-              onGotIt={handleGotIt}
-              onTryAgain={handleTryAgain}
+              onNext={handleNext}
               wordNumber={currentIndex + 1}
               totalWords={totalItems}
               itemLabel="Number"
+            />
+          ) : practiceMode === 'days' ? (
+            <PracticeCard
+              french={currentWord!.french}
+              english={currentWord!.english}
+              translationRevealed={translationRevealed}
+              onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
+              onRevealTranslation={handleRevealTranslation}
+              onNext={handleNext}
+              wordNumber={currentIndex + 1}
+              totalWords={totalItems}
+              itemLabel="Day"
+            />
+          ) : practiceMode === 'months' ? (
+            <PracticeCard
+              french={currentWord!.french}
+              english={currentWord!.english}
+              translationRevealed={translationRevealed}
+              onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
+              onRevealTranslation={handleRevealTranslation}
+              onNext={handleNext}
+              wordNumber={currentIndex + 1}
+              totalWords={totalItems}
+              itemLabel="Month"
+            />
+          ) : practiceMode === 'possessives' ? (
+            <PracticeCard
+              french={currentWord!.french}
+              english={currentWord!.english}
+              translationRevealed={translationRevealed}
+              onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
+              onRevealTranslation={handleRevealTranslation}
+              onNext={handleNext}
+              wordNumber={currentIndex + 1}
+              totalWords={totalItems}
+              itemLabel="Possessive"
+            />
+          ) : practiceMode === 'disjunctive' ? (
+            <PracticeCard
+              french={currentWord!.french}
+              english={currentWord!.english}
+              translationRevealed={translationRevealed}
+              onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
+              onRevealTranslation={handleRevealTranslation}
+              onNext={handleNext}
+              wordNumber={currentIndex + 1}
+              totalWords={totalItems}
+              itemLabel="Pronoun"
+            />
+          ) : practiceMode === 'aller' ? (
+            <PracticeCard
+              french={currentWord!.french}
+              english={currentWord!.english}
+              translationRevealed={translationRevealed}
+              onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
+              onRevealTranslation={handleRevealTranslation}
+              onNext={handleNext}
+              wordNumber={currentIndex + 1}
+              totalWords={totalItems}
+              itemLabel="Aller"
+            />
+          ) : practiceMode === 'colors' ? (
+            <PracticeCard
+              french={currentWord!.french}
+              english={currentWord!.english}
+              translationRevealed={translationRevealed}
+              onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
+              onRevealTranslation={handleRevealTranslation}
+              onNext={handleNext}
+              wordNumber={currentIndex + 1}
+              totalWords={totalItems}
+              itemLabel="Color"
+            />
+          ) : practiceMode === 'adjectives' ? (
+            <PracticeCard
+              french={currentWord!.french}
+              english={currentWord!.english}
+              translationRevealed={translationRevealed}
+              onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
+              onRevealTranslation={handleRevealTranslation}
+              onNext={handleNext}
+              wordNumber={currentIndex + 1}
+              totalWords={totalItems}
+              itemLabel="Adjective"
+            />
+          ) : practiceMode === 'postadjectives' ? (
+            <PracticeCard
+              french={currentWord!.french}
+              english={currentWord!.english}
+              translationRevealed={translationRevealed}
+              onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
+              onRevealTranslation={handleRevealTranslation}
+              onNext={handleNext}
+              wordNumber={currentIndex + 1}
+              totalWords={totalItems}
+              itemLabel="Adjective"
+            />
+          ) : practiceMode === 'preadjectives' ? (
+            <PracticeCard
+              french={currentWord!.french}
+              english={currentWord!.english}
+              translationRevealed={translationRevealed}
+              onSpeak={() => speak(currentWord!.english)}
+              showSpeaker={!autoPlay}
+              onRevealTranslation={handleRevealTranslation}
+              onNext={handleNext}
+              wordNumber={currentIndex + 1}
+              totalWords={totalItems}
+              itemLabel="Adjective"
             />
           ) : (
             <SoundPracticeCard
@@ -594,8 +1094,8 @@ export default function PracticePage() {
               phonetic={currentSound!.phonetic}
               phoneticSound={currentSound!.phoneticSound}
               playbackSpeed={playbackSpeed}
-              onGotIt={handleGotIt}
-              onTryAgain={handleTryAgain}
+              showSpeaker={!autoPlay}
+              onNext={handleNext}
             />
           )}
         </div>
@@ -603,8 +1103,16 @@ export default function PracticePage() {
         {/* Score Display */}
         <div className="mt-6 text-center">
           <p className="text-gray-700 font-semibold">
-            Correct: <span className="text-green-600 font-bold">{correctCount}</span> /{" "}
-            {currentIndex + 1}
+            {infiniteMode ? (
+              <>
+                Completed: <span className="text-green-600 font-bold">{correctCount}</span> (Infinite)
+              </>
+            ) : (
+              <>
+                Completed: <span className="text-green-600 font-bold">{correctCount}</span> /{" "}
+                {currentIndex + 1}
+              </>
+            )}
           </p>
         </div>
 
@@ -613,8 +1121,8 @@ export default function PracticePage() {
           <p className="font-semibold text-center mb-2">⌨️ Keyboard Shortcuts</p>
           <div className="grid grid-cols-2 gap-2 text-xs">
             <div><kbd className="px-2 py-1 bg-white rounded shadow">Space</kbd> - Play sound</div>
-            <div><kbd className="px-2 py-1 bg-white rounded shadow">Enter</kbd> - Got It!</div>
-            <div><kbd className="px-2 py-1 bg-white rounded shadow">R</kbd> - Try Again</div>
+            <div><kbd className="px-2 py-1 bg-white rounded shadow">Enter</kbd> - Next</div>
+            <div><kbd className="px-2 py-1 bg-white rounded shadow">R</kbd> - Next</div>
             <div><kbd className="px-2 py-1 bg-white rounded shadow">T</kbd> - Show translation</div>
             <div><kbd className="px-2 py-1 bg-white rounded shadow">Q</kbd> - Replay last</div>
           </div>

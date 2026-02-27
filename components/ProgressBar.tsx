@@ -2,14 +2,16 @@ interface ProgressBarProps {
   current: number;
   total: number;
   showLabel?: boolean;
+  isInfinite?: boolean;
 }
 
 export default function ProgressBar({
   current,
   total,
   showLabel = true,
+  isInfinite = false,
 }: ProgressBarProps) {
-  const percentage = (current / total) * 100;
+  const percentage = isInfinite ? 100 : (current / total) * 100;
 
   return (
     <div className="w-full">
@@ -19,8 +21,8 @@ export default function ProgressBar({
           <span className="text-sm font-semibold text-gray-700">
             Progress
           </span>
-          <span className="text-sm font-bold text-green-600 transition-all duration-300">
-            {current} / {total}
+          <span className={`text-sm font-bold transition-all duration-300 ${isInfinite ? "text-red-600" : "text-green-600"}`}>
+            {isInfinite ? "∞ Infinite" : `${current} / ${total}`}
           </span>
         </div>
       )}
@@ -28,7 +30,11 @@ export default function ProgressBar({
       {/* Progress Bar */}
       <div className="w-full h-4 bg-gray-200 rounded-full overflow-hidden shadow-inner">
         <div
-          className="h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full transition-all duration-700 ease-out relative overflow-hidden"
+          className={`h-full rounded-full transition-all duration-700 ease-out relative overflow-hidden ${
+            isInfinite
+              ? "bg-gradient-to-r from-red-500 to-red-600"
+              : "bg-gradient-to-r from-green-400 to-green-600"
+          }`}
           style={{ width: `${percentage}%` }}
         >
           {/* Shimmer effect */}

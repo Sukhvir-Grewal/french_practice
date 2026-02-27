@@ -18,14 +18,12 @@ export default function Home() {
         {/* Title */}
         <div className="text-center mb-12 animate-fadeIn">
           <h1 className="text-5xl sm:text-6xl font-bold text-gray-800 mb-4">
-            🇫🇷 French Sounds
+            French Sounds
           </h1>
           <p className="text-xl text-gray-600 mb-2">
             Master French Pronunciation
           </p>
-          <p className="text-sm text-gray-500">
-            Learn sounds and train vocabulary + prepositions with interactive practice
-          </p>
+         
         </div>
 
         {/* Stats Cards (if user has progress) */}
@@ -47,44 +45,149 @@ export default function Home() {
         )}
 
         {/* Main Action Cards */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <Link href="/learn">
-            <div className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group">
-              <div className="text-center">
-                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">
-                  📚
-                </div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-3">
-                  Learn
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  Browse French sounds with examples and pronunciation guidance
-                </p>
-                <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white py-4 px-6 rounded-2xl font-bold text-lg group-hover:from-blue-600 group-hover:to-blue-700 transition-all">
-                  Start Learning →
-                </div>
-              </div>
+        <div className="grid md:grid-cols-2 xl:grid-cols-12 gap-6 mb-8">
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">🔊</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Sounds</h2>
+              <p className="text-sm text-gray-600">Pronunciation patterns and listening</p>
             </div>
-          </Link>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=sounds" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
 
-          <Link href="/practice">
-            <div className="bg-white rounded-3xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer group">
-              <div className="text-center">
-                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform">
-                  🧠
-                </div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-3">
-                  Practice
-                </h2>
-                <p className="text-gray-600 mb-6">
-                  Choose your practice type: Sounds, Vocab, or Preposition
-                </p>
-                <div className="bg-gradient-to-r from-green-500 to-green-600 text-white py-4 px-6 rounded-2xl font-bold text-lg group-hover:from-green-600 group-hover:to-green-700 transition-all">
-                  Start Practice →
-                </div>
-              </div>
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">📝</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Vocab</h2>
+              <p className="text-sm text-gray-600">Common words with easy examples</p>
             </div>
-          </Link>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=vocab" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">📌</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Preposition</h2>
+              <p className="text-sm text-gray-600">Useful connectors for daily French</p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=prepositions" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">🔢</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Numbers</h2>
+              <p className="text-sm text-gray-600">Counting patterns and number drills</p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=numbers" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">📅</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Days</h2>
+              <p className="text-sm text-gray-600">Days of the week with simple drills</p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=days" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">🗓️</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Months</h2>
+              <p className="text-sm text-gray-600">Months of the year with simple drills</p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=months" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">🧩</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Possessive</h2>
+              <p className="text-sm text-gray-600">mon/ma/mes, ton/ta/tes and more</p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=possessives" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">🗣️</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Disjunctive</h2>
+              <p className="text-sm text-gray-600">moi/toi/lui/elle/eux/elles</p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=disjunctive" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">🚶</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Aller</h2>
+              <p className="text-sm text-gray-600">Present tense + à vs chez</p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=aller" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">🎨</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Colors</h2>
+              <p className="text-sm text-gray-600">Les couleurs + agreement rules</p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=colors" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">Aa</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Adjectives</h2>
+              <p className="text-sm text-gray-600">[m] and [f] common adjective forms</p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=adjectives" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">A+</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Adj After Noun</h2>
+              <p className="text-sm text-gray-600">Personality & quality adjectives</p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=postadjectives" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl p-6">
+            <div className="text-center mb-5">
+              <div className="text-5xl mb-3">A-</div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-2">Adj Before Noun</h2>
+              <p className="text-sm text-gray-600">BAGS adjectives and special forms</p>
+            </div>
+            <div className="grid grid-cols-1 gap-3">
+              <Link href="/learn?mode=preadjectives" className="text-center bg-blue-500 hover:bg-blue-600 text-white py-2.5 px-4 rounded-xl font-semibold transition-all duration-200">Open Topic</Link>
+            </div>
+          </div>
         </div>
 
         {/* Features */}

@@ -42,18 +42,10 @@ export default function SessionComplete({
   }
 
   return (
-    <div className="bg-white rounded-3xl shadow-xl p-8 text-center animate-celebration relative overflow-hidden">
-      {/* Confetti Background Effect */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-10 left-10 w-3 h-3 bg-yellow-400 rounded-full animate-float" style={{ animationDelay: '0s' }} />
-        <div className="absolute top-20 right-20 w-4 h-4 bg-green-400 rounded-full animate-float" style={{ animationDelay: '0.2s' }} />
-        <div className="absolute top-32 left-32 w-2 h-2 bg-blue-400 rounded-full animate-float" style={{ animationDelay: '0.4s' }} />
-        <div className="absolute top-16 right-12 w-3 h-3 bg-pink-400 rounded-full animate-float" style={{ animationDelay: '0.6s' }} />
-        <div className="absolute top-40 left-16 w-4 h-4 bg-purple-400 rounded-full animate-float" style={{ animationDelay: '0.8s' }} />
-      </div>
+    <div className="bg-white rounded-3xl shadow-xl p-8 text-center relative overflow-hidden">
 
       {/* Emoji */}
-      <div className="text-8xl mb-6 animate-bounce relative z-10">{emoji}</div>
+      <div className="text-8xl mb-6 relative z-10">{emoji}</div>
 
       {/* Title */}
       <h2 className="text-4xl font-bold text-gray-800 mb-2">
@@ -64,16 +56,16 @@ export default function SessionComplete({
       {/* Stats */}
       <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-6 mb-8 relative z-10">
         <div className="grid grid-cols-3 gap-4 mb-4">
-          <div className="bg-white rounded-xl p-4 shadow-sm animate-slideUp" style={{ animationDelay: '0.2s' }}>
+          <div className="bg-white rounded-xl p-4 shadow-sm">
             <p className="text-sm text-gray-600 mb-1">Correct</p>
             <p className="text-3xl font-bold text-green-600">{correctCount}</p>
           </div>
-          <div className="bg-white rounded-xl p-4 shadow-sm animate-slideUp" style={{ animationDelay: '0.3s' }}>
+          <div className="bg-white rounded-xl p-4 shadow-sm">
             <p className="text-sm text-gray-600 mb-1">Total</p>
             <p className="text-3xl font-bold text-blue-600">{totalWords}</p>
           </div>
           {sessionTime && (
-            <div className="bg-white rounded-xl p-4 shadow-sm animate-slideUp" style={{ animationDelay: '0.4s' }}>
+            <div className="bg-white rounded-xl p-4 shadow-sm">
               <p className="text-sm text-gray-600 mb-1">Time</p>
               <p className="text-2xl font-bold text-purple-600">{formatTime(sessionTime)}</p>
             </div>
