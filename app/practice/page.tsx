@@ -207,11 +207,12 @@ export default function PracticePage() {
         utterance.lang = "fr-FR";
         utterance.rate = playbackSpeed;
         
-        // Add error handling
-        utterance.onerror = (event) => {
-          console.error('Speech synthesis error:', event);
-          // Fallback: try again once
-          setTimeout(() => window.speechSynthesis.speak(utterance), 100);
+        utterance.onerror = (event: SpeechSynthesisErrorEvent) => {
+          const benignErrors = new Set(["canceled", "interrupted", "audio-busy"]);
+          if (benignErrors.has(event.error)) {
+            return;
+          }
+          console.warn("Speech synthesis warning:", event.error);
         };
         
         window.speechSynthesis.speak(utterance);
