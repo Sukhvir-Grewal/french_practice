@@ -1,0 +1,29 @@
+[
+  { "id": 1, "category": "house", "english": "house", "french": "une maison", "pronunciation": "oon meh-zon" },
+  { "id": 2, "category": "house", "english": "apartment", "french": "un appartement", "pronunciation": "uh-nah-par-tuh-mahn" },
+  { "id": 3, "category": "house", "english": "balcony", "french": "un balcon", "pronunciation": "uhn bal-kon" },
+  { "id": 4, "category": "house", "english": "stairs", "french": "un escalier", "pronunciation": "uhn es-ka-lee-ay" },
+  { "id": 5, "category": "house", "english": "garden", "french": "un jardin", "pronunciation": "uhn zhar-dan" },
+  { "id": 6, "category": "house", "english": "wall", "french": "un mur", "pronunciation": "uhn mur" },
+  { "id": 7, "category": "house", "english": "window", "french": "une fenêtre", "pronunciation": "oon fuh-netr" },
+  { "id": 8, "category": "house", "english": "door", "french": "une porte", "pronunciation": "oon port" },
+  { "id": 9, "category": "house", "english": "ceiling", "french": "un plafond", "pronunciation": "uhn pla-fon" },
+  { "id": 10, "category": "house", "english": "basement", "french": "un sous-sol", "pronunciation": "uhn soo-sol" },
+
+  { "id": 11, "category": "kitchen", "english": "stove", "french": "une cuisinière", "pronunciation": "oon kwee-zee-nyair" },
+  { "id": 12, "category": "kitchen", "english": "refrigerator", "french": "un réfrigérateur", "pronunciation": "uhn ray-free-zhay-rah-teur" },
+  { "id": 13, "category": "kitchen", "english": "oven", "french": "un four", "pronunciation": "uhn foor" },
+
+  { "id": 14, "category": "dining", "english": "chair", "french": "une chaise", "pronunciation": "oon shez" },
+  { "id": 15, "category": "dining", "english": "table", "french": "une table", "pronunciation": "oon tabl" },
+  { "id": 16, "category": "dining", "english": "sofa", "french": "un canapé", "pronunciation": "uhn ka-na-pay" },
+
+  { "id": 17, "category": "bedroom", "english": "room", "french": "une chambre", "pronunciation": "oon sham-br" },
+  { "id": 18, "category": "bedroom", "english": "television", "french": "une télévision", "pronunciation": "oon tay-lay-vee-zee-on" },
+  { "id": 19, "category": "bedroom", "english": "computer", "french": "un ordinateur", "pronunciation": "uhn or-dee-na-teur" },
+  { "id": 20, "category": "bedroom", "english": "telephone", "french": "un téléphone", "pronunciation": "uhn tay-lay-fon" },
+  { "id": 21, "category": "bedroom", "english": "bed", "french": "un lit", "pronunciation": "uhn lee" },
+  { "id": 22, "category": "bedroom", "english": "mirror", "french": "un miroir", "pronunciation": "uhn mee-rwar" },
+  { "id": 23, "category": "bedroom", "english": "bathroom", "french": "une salle de bain", "pronunciation": "oon sal duh ban" },
+  { "id": 24, "category": "bedroom", "english": "toilets", "french": "les toilettes", "pronunciation": "lay twa-let" }
+]

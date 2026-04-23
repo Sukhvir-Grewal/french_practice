@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "category": "adjectives-before-noun-common",
+    "english": "other",
+    "french": "autre",
+    "pronunciation": "oh-truh",
+    "tags": ["vocabulary", "adjective", "before-noun", "common"]
+  },
+  {
+    "id": 2,
+    "category": "adjectives-before-noun-masc",
+    "english": "good",
+    "french": "bon",
+    "pronunciation": "bon",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 3,
+    "category": "adjectives-before-noun-fem",
+    "english": "good",
+    "french": "bonne",
+    "pronunciation": "bon",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  },
+  {
+    "id": 4,
+    "category": "adjectives-before-noun-common",
+    "english": "young",
+    "french": "jeune",
+    "pronunciation": "zhuhn",
+    "tags": ["vocabulary", "adjective", "before-noun", "common"]
+  },
+  {
+    "id": 5,
+    "category": "adjectives-before-noun-masc",
+    "english": "big / tall",
+    "french": "grand",
+    "pronunciation": "grahn",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 6,
+    "category": "adjectives-before-noun-fem",
+    "english": "big / tall",
+    "french": "grande",
+    "pronunciation": "grahnd",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  },
+  {
+    "id": 7,
+    "category": "adjectives-before-noun-common",
+    "english": "large",
+    "french": "large",
+    "pronunciation": "larzh",
+    "tags": ["vocabulary", "adjective", "before-noun", "common"]
+  },
+  {
+    "id": 8,
+    "category": "adjectives-before-noun-masc",
+    "english": "bad",
+    "french": "mauvais",
+    "pronunciation": "moh-vay",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 9,
+    "category": "adjectives-before-noun-fem",
+    "english": "bad",
+    "french": "mauvaise",
+    "pronunciation": "moh-vehz",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  },
+  {
+    "id": 10,
+    "category": "adjectives-before-noun-masc",
+    "english": "old",
+    "french": "vieux",
+    "pronunciation": "vyuh",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 11,
+    "category": "adjectives-before-noun-fem",
+    "english": "old",
+    "french": "vieille",
+    "pronunciation": "vyay",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  },
+  {
+    "id": 12,
+    "category": "adjectives-before-noun-masc",
+    "english": "handsome",
+    "french": "beau",
+    "pronunciation": "boh",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 13,
+    "category": "adjectives-before-noun-fem",
+    "english": "beautiful",
+    "french": "belle",
+    "pronunciation": "bel",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  },
+  {
+    "id": 14,
+    "category": "adjectives-before-noun-masc",
+    "english": "pretty",
+    "french": "joli",
+    "pronunciation": "zhoh-lee",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 15,
+    "category": "adjectives-before-noun-fem",
+    "english": "pretty",
+    "french": "jolie",
+    "pronunciation": "zhoh-lee",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  },
+  {
+    "id": 16,
+    "category": "adjectives-before-noun-masc",
+    "english": "long",
+    "french": "long",
+    "pronunciation": "lon",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 17,
+    "category": "adjectives-before-noun-fem",
+    "english": "long",
+    "french": "longue",
+    "pronunciation": "long",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  },
+  {
+    "id": 18,
+    "category": "adjectives-before-noun-masc",
+    "english": "small",
+    "french": "petit",
+    "pronunciation": "puh-tee",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 19,
+    "category": "adjectives-before-noun-fem",
+    "english": "small",
+    "french": "petite",
+    "pronunciation": "puh-teet",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  },
+  {
+    "id": 20,
+    "category": "adjectives-before-noun-masc",
+    "english": "first",
+    "french": "premier",
+    "pronunciation": "pruh-myay",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 21,
+    "category": "adjectives-before-noun-fem",
+    "english": "first",
+    "french": "première",
+    "pronunciation": "pruh-myair",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  },
+  {
+    "id": 22,
+    "category": "adjectives-before-noun-masc",
+    "english": "last",
+    "french": "dernier",
+    "pronunciation": "dehr-nyay",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 23,
+    "category": "adjectives-before-noun-fem",
+    "english": "last",
+    "french": "dernière",
+    "pronunciation": "dehr-nyair",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  },
+  {
+    "id": 24,
+    "category": "adjectives-before-noun-common",
+    "english": "vast",
+    "french": "vaste",
+    "pronunciation": "vahst",
+    "tags": ["vocabulary", "adjective", "before-noun", "common"]
+  },
+  {
+    "id": 25,
+    "category": "adjectives-before-noun-masc",
+    "english": "new",
+    "french": "nouveau",
+    "pronunciation": "noo-voh",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 26,
+    "category": "adjectives-before-noun-fem",
+    "english": "new",
+    "french": "nouvelle",
+    "pronunciation": "noo-vel",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  },
+  {
+    "id": 27,
+    "category": "adjectives-before-noun-masc",
+    "english": "best / better",
+    "french": "meilleur",
+    "pronunciation": "may-yuhr",
+    "tags": ["vocabulary", "adjective", "before-noun", "masculine"]
+  },
+  {
+    "id": 28,
+    "category": "adjectives-before-noun-fem",
+    "english": "best / better",
+    "french": "meilleure",
+    "pronunciation": "may-yuhr",
+    "tags": ["vocabulary", "adjective", "before-noun", "feminine"]
+  }
+]

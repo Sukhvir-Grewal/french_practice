@@ -1,0 +1,18 @@
+{
+    "sourceFile": "data/seasons-weather.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1776380100599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1776380100599,
+            "name": "Commit-0",
+            "content": "[\r\n  { \"id\": 1, \"category\": \"seasons\", \"english\": \"spring\", \"french\": \"le printemps\", \"pronunciation\": \"luh pran-tahn\", \"tags\": [\"season\"] },\r\n  { \"id\": 2, \"category\": \"seasons\", \"english\": \"summer\", \"french\": \"l’été\", \"pronunciation\": \"lay-tay\", \"tags\": [\"season\"] },\r\n  { \"id\": 3, \"category\": \"seasons\", \"english\": \"autumn / fall\", \"french\": \"l’automne\", \"pronunciation\": \"lo-ton\", \"tags\": [\"season\"] },\r\n  { \"id\": 4, \"category\": \"seasons\", \"english\": \"winter\", \"french\": \"l’hiver\", \"pronunciation\": \"lee-vehr\", \"tags\": [\"season\"] },\r\n\r\n  { \"id\": 5, \"category\": \"weather-question\", \"english\": \"What’s the weather like?\", \"french\": \"Quel temps fait-il ?\", \"pronunciation\": \"kel tan feh-teel\", \"tags\": [\"weather\", \"question\"] },\r\n\r\n  { \"id\": 6, \"category\": \"weather\", \"english\": \"it’s nice\", \"french\": \"il fait bon\", \"pronunciation\": \"eel feh bon\", \"tags\": [\"weather\"] },\r\n  { \"id\": 7, \"category\": \"weather\", \"english\": \"it’s bad\", \"french\": \"il fait mauvais\", \"pronunciation\": \"eel feh moh-vay\", \"tags\": [\"weather\"] },\r\n\r\n  { \"id\": 8, \"category\": \"weather\", \"english\": \"it’s cold\", \"french\": \"il fait froid\", \"pronunciation\": \"eel feh frwah\", \"tags\": [\"weather\"] },\r\n  { \"id\": 9, \"category\": \"weather\", \"english\": \"it’s cool\", \"french\": \"il fait frais\", \"pronunciation\": \"eel feh freh\", \"tags\": [\"weather\"] },\r\n  { \"id\": 10, \"category\": \"weather\", \"english\": \"it’s hot\", \"french\": \"il fait chaud\", \"pronunciation\": \"eel feh shoh\", \"tags\": [\"weather\"] },\r\n\r\n  { \"id\": 11, \"category\": \"weather\", \"english\": \"it’s beautiful\", \"french\": \"il fait beau\", \"pronunciation\": \"eel feh boh\", \"tags\": [\"weather\"] },\r\n  { \"id\": 12, \"category\": \"weather\", \"english\": \"it’s mild\", \"french\": \"il fait doux\", \"pronunciation\": \"eel feh doo\", \"tags\": [\"weather\"] },\r\n\r\n  { \"id\": 13, \"category\": \"weather\", \"english\": \"it’s sunny\", \"french\": \"il fait du soleil\", \"pronunciation\": \"eel feh du soh-lay\", \"tags\": [\"weather\"] },\r\n  { \"id\": 14, \"category\": \"weather\", \"english\": \"it’s windy\", \"french\": \"il y a du vent\", \"pronunciation\": \"eel yah du vahn\", \"tags\": [\"weather\"] },\r\n\r\n  { \"id\": 15, \"category\": \"weather\", \"english\": \"it’s cloudy\", \"french\": \"il fait nuageux\", \"pronunciation\": \"eel feh nwee-ah-zhuh\", \"tags\": [\"weather\"] },\r\n  { \"id\": 16, \"category\": \"weather\", \"english\": \"it’s foggy\", \"french\": \"il y a du brouillard\", \"pronunciation\": \"eel yah du broo-yar\", \"tags\": [\"weather\"] },\r\n\r\n  { \"id\": 17, \"category\": \"weather\", \"english\": \"it’s snowing\", \"french\": \"il neige\", \"pronunciation\": \"eel nezh\", \"tags\": [\"weather\"] },\r\n  { \"id\": 18, \"category\": \"weather\", \"english\": \"it’s raining\", \"french\": \"il pleut\", \"pronunciation\": \"eel pluh\", \"tags\": [\"weather\"] }\r\n]"
+        }
+    ]
+}

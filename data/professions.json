@@ -1,0 +1,100 @@
+[
+  { "id": 1, "category": "question", "english": "What is your profession?", "french": "Quelle est votre profession ?", "pronunciation": "kel eh voh-truh pro-fes-syon", "tags": ["profession", "question"] },
+  { "id": 2, "category": "question", "english": "What is your occupation?", "french": "Quelle est votre occupation ?", "pronunciation": "kel eh voh-truh ok-yoo-pah-syon", "tags": ["profession", "question"] },
+
+  { "id": 3, "category": "jobs-common", "english": "architect", "french": "l’architecte", "pronunciation": "lar-shee-tekt", "tags": ["profession", "common"] },
+  { "id": 4, "category": "jobs-common", "english": "accountant", "french": "le comptable", "pronunciation": "luh kon-tab-luh", "tags": ["profession", "common"] },
+  { "id": 5, "category": "jobs-common", "english": "judge", "french": "le juge / la juge", "pronunciation": "luh zhuzh", "tags": ["profession", "common"] },
+
+  { "id": 6, "category": "jobs-masc", "english": "businessman", "french": "l’homme d’affaires", "pronunciation": "lom dah-fehr", "tags": ["profession", "masculine"] },
+  { "id": 7, "category": "jobs-fem", "english": "businesswoman", "french": "la femme d’affaires", "pronunciation": "la fam dah-fehr", "tags": ["profession", "feminine"] },
+
+  { "id": 8, "category": "jobs-masc", "english": "baker", "french": "le boulanger", "pronunciation": "luh boo-lahn-zhay", "tags": ["profession", "masculine"] },
+  { "id": 9, "category": "jobs-fem", "english": "baker", "french": "la boulangère", "pronunciation": "la boo-lahn-zhair", "tags": ["profession", "feminine"] },
+
+  { "id": 10, "category": "jobs-masc", "english": "hairdresser", "french": "le coiffeur", "pronunciation": "luh kwah-fuhr", "tags": ["profession", "masculine"] },
+  { "id": 11, "category": "jobs-fem", "english": "hairdresser", "french": "la coiffeuse", "pronunciation": "la kwah-fuhz", "tags": ["profession", "feminine"] },
+
+  { "id": 12, "category": "jobs-masc", "english": "computer programmer", "french": "le programmeur", "pronunciation": "luh პრო-grah-muhr", "tags": ["profession", "masculine"] },
+  { "id": 13, "category": "jobs-fem", "english": "computer programmer", "french": "la programmeuse", "pronunciation": "la პრო-grah-muhz", "tags": ["profession", "feminine"] },
+
+  { "id": 14, "category": "jobs-common", "english": "secretary", "french": "le secrétaire / la secrétaire", "pronunciation": "suh-kreh-tehr", "tags": ["profession", "common"] },
+  { "id": 15, "category": "jobs-common", "english": "electrician", "french": "l’électricien / l’électricienne", "pronunciation": "lay-lek-tree-syen", "tags": ["profession", "common"] },
+
+  { "id": 16, "category": "jobs-masc", "english": "mechanic", "french": "le mécanicien", "pronunciation": "luh may-kah-nee-syen", "tags": ["profession", "masculine"] },
+  { "id": 17, "category": "jobs-fem", "english": "mechanic", "french": "la mécanicienne", "pronunciation": "la may-kah-nee-syen", "tags": ["profession", "feminine"] },
+
+  { "id": 18, "category": "jobs-masc", "english": "cook", "french": "le cuisinier", "pronunciation": "luh kwee-zee-nyay", "tags": ["profession", "masculine"] },
+  { "id": 19, "category": "jobs-fem", "english": "cook", "french": "la cuisinière", "pronunciation": "la kwee-zee-nyair", "tags": ["profession", "feminine"] },
+
+  { "id": 20, "category": "jobs-masc", "english": "salesperson", "french": "le vendeur", "pronunciation": "luh vahn-duhr", "tags": ["profession", "masculine"] },
+  { "id": 21, "category": "jobs-fem", "english": "salesperson", "french": "la vendeuse", "pronunciation": "la vahn-duhz", "tags": ["profession", "feminine"] },
+
+  { "id": 22, "category": "jobs-common", "english": "firefighter", "french": "le pompier / la pompière", "pronunciation": "pon-pyay", "tags": ["profession", "common"] },
+  { "id": 23, "category": "jobs-common", "english": "librarian", "french": "le bibliothécaire / la bibliothécaire", "pronunciation": "bee-blee-oh-tay-kehr", "tags": ["profession", "common"] },
+  { "id": 24, "category": "jobs-common", "english": "police officer", "french": "l’agent de police", "pronunciation": "la-zhahn duh poh-lees", "tags": ["profession", "common"] },
+  { "id": 25, "category": "jobs-common", "english": "reporter / journalist", "french": "le journaliste / la journaliste", "pronunciation": "zhoor-nah-leest", "tags": ["profession", "common"] },
+
+  { "id": 26, "category": "jobs-masc", "english": "banker", "french": "le banquier", "pronunciation": "luh ban-kee-yay", "tags": ["profession", "masculine"] },
+  { "id": 27, "category": "jobs-fem", "english": "banker", "french": "la banquière", "pronunciation": "la ban-kyair", "tags": ["profession", "feminine"] },
+
+  { "id": 28, "category": "jobs-masc", "english": "lawyer", "french": "l’avocat", "pronunciation": "la-vo-kah", "tags": ["profession", "masculine"] },
+  { "id": 29, "category": "jobs-fem", "english": "lawyer", "french": "l’avocate", "pronunciation": "la-vo-kat", "tags": ["profession", "feminine"] },
+
+  { "id": 30, "category": "jobs-masc", "english": "carpenter", "french": "le charpentier", "pronunciation": "luh shar-pon-tyay", "tags": ["profession", "masculine"] },
+  { "id": 31, "category": "jobs-fem", "english": "carpenter", "french": "la charpentière", "pronunciation": "la shar-pon-tyair", "tags": ["profession", "feminine"] },
+
+  { "id": 32, "category": "jobs-masc", "english": "engineer", "french": "l’ingénieur", "pronunciation": "lan-zhay-nyuhr", "tags": ["profession", "masculine"] },
+  { "id": 33, "category": "jobs-fem", "english": "engineer", "french": "l’ingénieure", "pronunciation": "lan-zhay-nyuhr", "tags": ["profession", "feminine"] },
+
+  { "id": 34, "category": "jobs-masc", "english": "doctor", "french": "le médecin", "pronunciation": "luh med-sahn", "tags": ["profession", "masculine"] },
+  { "id": 35, "category": "jobs-fem", "english": "doctor", "french": "la médecin / la docteure", "pronunciation": "la med-sahn / dok-tuhr", "tags": ["profession", "feminine"] },
+
+  { "id": 36, "category": "jobs-masc", "english": "nurse", "french": "l’infirmier", "pronunciation": "lan-feer-mee-yay", "tags": ["profession", "masculine"] },
+  { "id": 37, "category": "jobs-fem", "english": "nurse", "french": "l’infirmière", "pronunciation": "lan-feer-mee-yair", "tags": ["profession", "feminine"] },
+
+  { "id": 38, "category": "jobs-masc", "english": "pharmacist", "french": "le pharmacien", "pronunciation": "luh far-mah-syen", "tags": ["profession", "masculine"] },
+  { "id": 39, "category": "jobs-fem", "english": "pharmacist", "french": "la pharmacienne", "pronunciation": "la far-mah-syen", "tags": ["profession", "feminine"] },
+
+  { "id": 40, "category": "jobs-common", "english": "dentist", "french": "le dentiste / la dentiste", "pronunciation": "don-teest", "tags": ["profession", "common"] },
+  { "id": 41, "category": "jobs-common", "english": "taxi driver", "french": "le chauffeur de taxi / la chauffeuse de taxi", "pronunciation": "shoh-fuhr duh tak-see", "tags": ["profession", "common"] },
+
+  { "id": 42, "category": "jobs-masc", "english": "writer", "french": "l’écrivain", "pronunciation": "lay-kree-van", "tags": ["profession", "masculine"] },
+  { "id": 43, "category": "jobs-fem", "english": "writer", "french": "l’écrivaine", "pronunciation": "lay-kree-ven", "tags": ["profession", "feminine"] },
+
+  { "id": 44, "category": "jobs-masc", "english": "teacher", "french": "le professeur", "pronunciation": "luh პრო-feh-suhr", "tags": ["profession", "masculine"] },
+  { "id": 45, "category": "jobs-fem", "english": "teacher", "french": "la professeure", "pronunciation": "la პრო-feh-suhr", "tags": ["profession", "feminine"] },
+
+  { "id": 46, "category": "jobs-masc", "english": "school teacher", "french": "l’instituteur", "pronunciation": "lan-stee-too-tuhr", "tags": ["profession", "masculine"] },
+  { "id": 47, "category": "jobs-fem", "english": "school teacher", "french": "l’institutrice", "pronunciation": "lan-stee-too-trees", "tags": ["profession", "feminine"] },
+
+  { "id": 48, "category": "jobs-masc", "english": "counsellor", "french": "le conseiller", "pronunciation": "luh կոն-say-yay", "tags": ["profession", "masculine"] },
+  { "id": 49, "category": "jobs-fem", "english": "counsellor", "french": "la conseillère", "pronunciation": "la კონ-say-yair", "tags": ["profession", "feminine"] },
+
+  { "id": 50, "category": "jobs-common", "english": "lab technician", "french": "un technicien de laboratoire / une technicienne de laboratoire", "pronunciation": "tek-nee-syen duh la-bo-ra-twahr", "tags": ["profession", "common"] },
+
+  { "id": 51, "category": "jobs-masc", "english": "dancer", "french": "un danseur", "pronunciation": "uhn don-suhr", "tags": ["profession", "masculine"] },
+  { "id": 52, "category": "jobs-fem", "english": "dancer", "french": "une danseuse", "pronunciation": "oon don-suhz", "tags": ["profession", "feminine"] },
+
+  { "id": 53, "category": "jobs-common", "english": "receptionist", "french": "la réceptionniste / le réceptionniste", "pronunciation": "ray-sep-syo-neest", "tags": ["profession", "common"] },
+  { "id": 54, "category": "jobs-common", "english": "homemaker / housewife", "french": "la femme au foyer", "pronunciation": "la fam oh fwah-yay", "tags": ["profession", "common"] },
+
+  { "id": 55, "category": "jobs-masc", "english": "farmer", "french": "l’agriculteur", "pronunciation": "la-gree-kul-tuhr", "tags": ["profession", "masculine"] },
+  { "id": 56, "category": "jobs-fem", "english": "farmer", "french": "l’agricultrice", "pronunciation": "la-gree-kul-trees", "tags": ["profession", "feminine"] },
+
+  { "id": 57, "category": "jobs-common", "english": "photographer", "french": "le photographe / la photographe", "pronunciation": "foh-toh-graf", "tags": ["profession", "common"] },
+
+  { "id": 58, "category": "jobs-masc", "english": "manager / director", "french": "le directeur", "pronunciation": "luh dee-rek-tuhr", "tags": ["profession", "masculine"] },
+  { "id": 59, "category": "jobs-fem", "english": "manager / director", "french": "la directrice", "pronunciation": "la dee-rek-trees", "tags": ["profession", "feminine"] },
+
+  { "id": 60, "category": "jobs-common", "english": "painter", "french": "le peintre / la peintre", "pronunciation": "pantr", "tags": ["profession", "common"] },
+
+  { "id": 61, "category": "jobs-masc", "english": "beautician", "french": "l’esthéticien", "pronunciation": "les-tay-tee-syen", "tags": ["profession", "masculine"] },
+  { "id": 62, "category": "jobs-fem", "english": "beautician", "french": "l’esthéticienne", "pronunciation": "les-tay-tee-syen", "tags": ["profession", "feminine"] },
+
+  { "id": 63, "category": "jobs-masc", "english": "actor", "french": "l’acteur", "pronunciation": "lak-tuhr", "tags": ["profession", "masculine"] },
+  { "id": 64, "category": "jobs-fem", "english": "actor / actress", "french": "l’actrice", "pronunciation": "lak-trees", "tags": ["profession", "feminine"] },
+
+  { "id": 65, "category": "jobs-masc", "english": "supervisor", "french": "le superviseur", "pronunciation": "luh soo-per-vee-zuhr", "tags": ["profession", "masculine"] },
+  { "id": 66, "category": "jobs-fem", "english": "supervisor", "french": "la superviseuse", "pronunciation": "la soo-per-vee-zuhz", "tags": ["profession", "feminine"] }
+]

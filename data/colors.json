@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "category": "colors",
+    "english": "red",
+    "french": "rouge",
+    "pronunciation": "roozh",
+    "tags": ["vocabulary", "color"]
+  },
+  {
+    "id": 2,
+    "category": "colors",
+    "english": "orange",
+    "french": "orange",
+    "pronunciation": "oh-rahnzh",
+    "tags": ["vocabulary", "color"]
+  },
+  {
+    "id": 3,
+    "category": "colors",
+    "english": "yellow",
+    "french": "jaune",
+    "pronunciation": "zhohn",
+    "tags": ["vocabulary", "color"]
+  },
+  {
+    "id": 4,
+    "category": "colors",
+    "english": "pink",
+    "french": "rose",
+    "pronunciation": "rohz",
+    "tags": ["vocabulary", "color"]
+  },
+  {
+    "id": 5,
+    "category": "colors",
+    "english": "green",
+    "french": "vert",
+    "pronunciation": "vehr",
+    "tags": ["vocabulary", "color"]
+  },
+  {
+    "id": 6,
+    "category": "colors",
+    "english": "blue",
+    "french": "bleu",
+    "pronunciation": "bluh",
+    "tags": ["vocabulary", "color"]
+  },
+  {
+    "id": 7,
+    "category": "colors",
+    "english": "purple",
+    "french": "violet",
+    "pronunciation": "vee-oh-lay",
+    "tags": ["vocabulary", "color"]
+  },
+  {
+    "id": 8,
+    "category": "colors",
+    "english": "white",
+    "french": "blanc",
+    "pronunciation": "blahn",
+    "tags": ["vocabulary", "color"]
+  },
+  {
+    "id": 9,
+    "category": "colors",
+    "english": "brown",
+    "french": "marron",
+    "pronunciation": "mah-rohn",
+    "tags": ["vocabulary", "color"]
+  },
+  {
+    "id": 10,
+    "category": "colors",
+    "english": "black",
+    "french": "noir",
+    "pronunciation": "nwar",
+    "tags": ["vocabulary", "color"]
+  }
+]

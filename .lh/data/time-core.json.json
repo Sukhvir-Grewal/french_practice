@@ -1,0 +1,18 @@
+{
+    "sourceFile": "data/time-core.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1776380214303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1776380214303,
+            "name": "Commit-0",
+            "content": "{\r\n  \"deck\": \"time\",\r\n  \"question\": {\r\n    \"english\": \"What time is it?\",\r\n    \"french\": \"Quelle heure est-il ?\",\r\n    \"pronunciation\": \"kel uhr eh-teel\"\r\n  },\r\n  \"terms\": [\r\n    { \"id\": 1, \"english\": \"quarter\", \"french\": \"quart\", \"pronunciation\": \"kar\" },\r\n    { \"id\": 2, \"english\": \"half\", \"french\": \"demie\", \"pronunciation\": \"duh-mee\" },\r\n    { \"id\": 3, \"english\": \"midnight\", \"french\": \"minuit\", \"pronunciation\": \"mee-nwee\" },\r\n    { \"id\": 4, \"english\": \"noon\", \"french\": \"midi\", \"pronunciation\": \"mee-dee\" },\r\n    { \"id\": 5, \"english\": \"three quarters / 45 minutes\", \"french\": \"trois quarts\", \"pronunciation\": \"trwah kar\" },\r\n    { \"id\": 6, \"english\": \"minus / less\", \"french\": \"moins\", \"pronunciation\": \"mwahn\" }\r\n  ],\r\n  \"examples\": [\r\n    {\r\n      \"id\": 101,\r\n      \"english\": \"3:00 PM\",\r\n      \"french\": \"il est quinze heures\",\r\n      \"pronunciation\": \"eel eh kanz uhr\"\r\n    },\r\n    {\r\n      \"id\": 102,\r\n      \"english\": \"5:30 PM\",\r\n      \"french\": \"il est dix-sept heures et demie\",\r\n      \"pronunciation\": \"eel eh dees-set uhr ay duh-mee\"\r\n    },\r\n    {\r\n      \"id\": 103,\r\n      \"english\": \"6:45 PM\",\r\n      \"french\": \"il est dix-huit heures quarante-cinq\",\r\n      \"pronunciation\": \"eel eh deez-weet uhr kah-ront sank\"\r\n    },\r\n    {\r\n      \"id\": 104,\r\n      \"english\": \"6:45 PM\",\r\n      \"french\": \"il est dix-huit heures trois quarts\",\r\n      \"pronunciation\": \"eel eh deez-weet uhr trwah kar\"\r\n    },\r\n    {\r\n      \"id\": 105,\r\n      \"english\": \"6:45 PM\",\r\n      \"french\": \"il est dix-neuf heures moins le quart\",\r\n      \"pronunciation\": \"eel eh dees-nuhf uhr mwahn luh kar\"\r\n    },\r\n    {\r\n      \"id\": 106,\r\n      \"english\": \"9:00 PM\",\r\n      \"french\": \"il est vingt et une heures\",\r\n      \"pronunciation\": \"eel eh van-tay oon uhr\"\r\n    }\r\n  ],\r\n  \"practiceModes\": [\r\n    { \"id\": \"terms\", \"label\": \"Time words only\" },\r\n    { \"id\": \"examples\", \"label\": \"Fixed examples\" },\r\n    { \"id\": \"generated\", \"label\": \"Generated clock practice\" },\r\n    { \"id\": \"mixed\", \"label\": \"Mixed practice\" }\r\n  ]\r\n}"
+        }
+    ]
+}

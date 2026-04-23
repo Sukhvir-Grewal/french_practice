@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "category": "question-quel",
+    "english": "which / what (masculine singular)",
+    "french": "quel",
+    "pronunciation": "kel",
+    "tags": ["grammar", "question"]
+  },
+  {
+    "id": 2,
+    "category": "question-quel",
+    "english": "which / what (feminine singular)",
+    "french": "quelle",
+    "pronunciation": "kel",
+    "tags": ["grammar", "question"]
+  },
+  {
+    "id": 3,
+    "category": "question-quel",
+    "english": "which / what (masculine plural)",
+    "french": "quels",
+    "pronunciation": "kel",
+    "tags": ["grammar", "question"]
+  },
+  {
+    "id": 4,
+    "category": "question-quel",
+    "english": "which / what (feminine plural)",
+    "french": "quelles",
+    "pronunciation": "kel",
+    "tags": ["grammar", "question"]
+  },
+
+  {
+    "id": 5,
+    "category": "question-quel-examples",
+    "english": "Which book?",
+    "french": "Quel livre ?",
+    "pronunciation": "kel leevr",
+    "tags": ["grammar", "question", "example"]
+  },
+  {
+    "id": 6,
+    "category": "question-quel-examples",
+    "english": "Which car?",
+    "french": "Quelle voiture ?",
+    "pronunciation": "kel vwah-tur",
+    "tags": ["grammar", "question", "example"]
+  },
+  {
+    "id": 7,
+    "category": "question-quel-examples",
+    "english": "Which books?",
+    "french": "Quels livres ?",
+    "pronunciation": "kel leevr",
+    "tags": ["grammar", "question", "example"]
+  },
+  {
+    "id": 8,
+    "category": "question-quel-examples",
+    "english": "Which houses?",
+    "french": "Quelles maisons ?",
+    "pronunciation": "kel may-zon",
+    "tags": ["grammar", "question", "example"]
+  }
+]

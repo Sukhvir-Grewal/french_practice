@@ -1,0 +1,60 @@
+{
+  "deck": "time",
+  "question": {
+    "english": "What time is it?",
+    "french": "Quelle heure est-il ?",
+    "pronunciation": "kel uhr eh-teel"
+  },
+  "terms": [
+    { "id": 1, "english": "quarter", "french": "quart", "pronunciation": "kar" },
+    { "id": 2, "english": "half", "french": "demie", "pronunciation": "duh-mee" },
+    { "id": 3, "english": "midnight", "french": "minuit", "pronunciation": "mee-nwee" },
+    { "id": 4, "english": "noon", "french": "midi", "pronunciation": "mee-dee" },
+    { "id": 5, "english": "three quarters / 45 minutes", "french": "trois quarts", "pronunciation": "trwah kar" },
+    { "id": 6, "english": "minus / less", "french": "moins", "pronunciation": "mwahn" }
+  ],
+  "examples": [
+    {
+      "id": 101,
+      "english": "3:00 PM",
+      "french": "il est quinze heures",
+      "pronunciation": "eel eh kanz uhr"
+    },
+    {
+      "id": 102,
+      "english": "5:30 PM",
+      "french": "il est dix-sept heures et demie",
+      "pronunciation": "eel eh dees-set uhr ay duh-mee"
+    },
+    {
+      "id": 103,
+      "english": "6:45 PM",
+      "french": "il est dix-huit heures quarante-cinq",
+      "pronunciation": "eel eh deez-weet uhr kah-ront sank"
+    },
+    {
+      "id": 104,
+      "english": "6:45 PM",
+      "french": "il est dix-huit heures trois quarts",
+      "pronunciation": "eel eh deez-weet uhr trwah kar"
+    },
+    {
+      "id": 105,
+      "english": "6:45 PM",
+      "french": "il est dix-neuf heures moins le quart",
+      "pronunciation": "eel eh dees-nuhf uhr mwahn luh kar"
+    },
+    {
+      "id": 106,
+      "english": "9:00 PM",
+      "french": "il est vingt et une heures",
+      "pronunciation": "eel eh van-tay oon uhr"
+    }
+  ],
+  "practiceModes": [
+    { "id": "terms", "label": "Time words only" },
+    { "id": "examples", "label": "Fixed examples" },
+    { "id": "generated", "label": "Generated clock practice" },
+    { "id": "mixed", "label": "Mixed practice" }
+  ]
+}

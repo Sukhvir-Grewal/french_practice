@@ -1,0 +1,22 @@
+[
+  { "id": 1, "english": "Good morning", "french": "bonjour", "pronunciation": "bon-zhoor", "tags": ["greeting", "formal"] },
+  { "id": 2, "english": "Good afternoon", "french": "bon après-midi", "pronunciation": "bon ah-preh mee-dee", "tags": ["greeting"] },
+  { "id": 3, "english": "Good evening", "french": "bonsoir", "pronunciation": "bon-swahr", "tags": ["greeting"] },
+
+  { "id": 4, "english": "Have a good day", "french": "bonne journée", "pronunciation": "bun zhoor-nay", "tags": ["polite"] },
+  { "id": 5, "english": "Have a good afternoon", "french": "bonne après-midi", "pronunciation": "bun ah-preh mee-dee", "tags": ["polite"] },
+  { "id": 6, "english": "Have a good evening", "french": "bonne soirée", "pronunciation": "bun swah-ray", "tags": ["polite"] },
+
+  { "id": 7, "english": "See you soon", "french": "à bientôt", "pronunciation": "ah byan-toh", "tags": ["farewell"] },
+  { "id": 8, "english": "See you tomorrow", "french": "à demain", "pronunciation": "ah duh-man", "tags": ["farewell"] },
+  { "id": 9, "english": "Today", "french": "aujourd’hui", "pronunciation": "oh-zhoor-dwee", "tags": ["time"] },
+
+  { "id": 10, "english": "Hello", "french": "salut", "pronunciation": "sa-loo", "tags": ["informal"] },
+  { "id": 11, "english": "Hi", "french": "coucou", "pronunciation": "koo-koo", "tags": ["very informal"] },
+  { "id": 12, "english": "Goodbye", "french": "au revoir", "pronunciation": "oh ruh-vwahr", "tags": ["farewell"] },
+  { "id": 13, "english": "Good night", "french": "bonne nuit", "pronunciation": "bun nwee", "tags": ["farewell"] },
+
+  { "id": 14, "english": "How are you?", "french": "comment ça va ?", "pronunciation": "koh-mahn sah vah", "tags": ["conversation"] },
+  { "id": 15, "english": "I am fine", "french": "ça va bien", "pronunciation": "sah vah byan", "tags": ["conversation"] },
+  { "id": 16, "english": "And you?", "french": "et toi ?", "pronunciation": "ay twah", "tags": ["conversation"] }
+]

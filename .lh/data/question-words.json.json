@@ -1,0 +1,18 @@
+{
+    "sourceFile": "data/question-words.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1776379535151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1776379535151,
+            "name": "Commit-0",
+            "content": "[\r\n  {\r\n    \"id\": 1,\r\n    \"category\": \"question-quel\",\r\n    \"english\": \"which / what (masculine singular)\",\r\n    \"french\": \"quel\",\r\n    \"pronunciation\": \"kel\",\r\n    \"tags\": [\"grammar\", \"question\"]\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"category\": \"question-quel\",\r\n    \"english\": \"which / what (feminine singular)\",\r\n    \"french\": \"quelle\",\r\n    \"pronunciation\": \"kel\",\r\n    \"tags\": [\"grammar\", \"question\"]\r\n  },\r\n  {\r\n    \"id\": 3,\r\n    \"category\": \"question-quel\",\r\n    \"english\": \"which / what (masculine plural)\",\r\n    \"french\": \"quels\",\r\n    \"pronunciation\": \"kel\",\r\n    \"tags\": [\"grammar\", \"question\"]\r\n  },\r\n  {\r\n    \"id\": 4,\r\n    \"category\": \"question-quel\",\r\n    \"english\": \"which / what (feminine plural)\",\r\n    \"french\": \"quelles\",\r\n    \"pronunciation\": \"kel\",\r\n    \"tags\": [\"grammar\", \"question\"]\r\n  },\r\n\r\n  {\r\n    \"id\": 5,\r\n    \"category\": \"question-quel-examples\",\r\n    \"english\": \"Which book?\",\r\n    \"french\": \"Quel livre ?\",\r\n    \"pronunciation\": \"kel leevr\",\r\n    \"tags\": [\"grammar\", \"question\", \"example\"]\r\n  },\r\n  {\r\n    \"id\": 6,\r\n    \"category\": \"question-quel-examples\",\r\n    \"english\": \"Which car?\",\r\n    \"french\": \"Quelle voiture ?\",\r\n    \"pronunciation\": \"kel vwah-tur\",\r\n    \"tags\": [\"grammar\", \"question\", \"example\"]\r\n  },\r\n  {\r\n    \"id\": 7,\r\n    \"category\": \"question-quel-examples\",\r\n    \"english\": \"Which books?\",\r\n    \"french\": \"Quels livres ?\",\r\n    \"pronunciation\": \"kel leevr\",\r\n    \"tags\": [\"grammar\", \"question\", \"example\"]\r\n  },\r\n  {\r\n    \"id\": 8,\r\n    \"category\": \"question-quel-examples\",\r\n    \"english\": \"Which houses?\",\r\n    \"french\": \"Quelles maisons ?\",\r\n    \"pronunciation\": \"kel may-zon\",\r\n    \"tags\": [\"grammar\", \"question\", \"example\"]\r\n  }\r\n]"
+        }
+    ]
+}

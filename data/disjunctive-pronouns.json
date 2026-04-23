@@ -1,0 +1,131 @@
+[
+  {
+    "id": 1,
+    "category": "disjunctive-pronouns",
+    "english": "me",
+    "french": "moi",
+    "pronunciation": "mwah",
+    "tags": ["grammar", "pronoun", "disjunctive"]
+  },
+  {
+    "id": 2,
+    "category": "disjunctive-pronouns",
+    "english": "us",
+    "french": "nous",
+    "pronunciation": "noo",
+    "tags": ["grammar", "pronoun", "disjunctive"]
+  },
+  {
+    "id": 3,
+    "category": "disjunctive-pronouns",
+    "english": "you (informal)",
+    "french": "toi",
+    "pronunciation": "twah",
+    "tags": ["grammar", "pronoun", "disjunctive"]
+  },
+  {
+    "id": 4,
+    "category": "disjunctive-pronouns",
+    "english": "you (formal/plural)",
+    "french": "vous",
+    "pronunciation": "voo",
+    "tags": ["grammar", "pronoun", "disjunctive"]
+  },
+  {
+    "id": 5,
+    "category": "disjunctive-pronouns",
+    "english": "him",
+    "french": "lui",
+    "pronunciation": "lwee",
+    "tags": ["grammar", "pronoun", "disjunctive"]
+  },
+  {
+    "id": 6,
+    "category": "disjunctive-pronouns",
+    "english": "her",
+    "french": "elle",
+    "pronunciation": "el",
+    "tags": ["grammar", "pronoun", "disjunctive"]
+  },
+  {
+    "id": 7,
+    "category": "disjunctive-pronouns",
+    "english": "them (masculine / mixed)",
+    "french": "eux",
+    "pronunciation": "uh",
+    "tags": ["grammar", "pronoun", "disjunctive"]
+  },
+  {
+    "id": 8,
+    "category": "disjunctive-pronouns",
+    "english": "them (feminine)",
+    "french": "elles",
+    "pronunciation": "el",
+    "tags": ["grammar", "pronoun", "disjunctive"]
+  },
+
+  {
+    "id": 9,
+    "category": "subject-vs-disjunctive",
+    "english": "I → me",
+    "french": "je → moi",
+    "pronunciation": "zhuh ... mwah",
+    "tags": ["grammar", "pronoun", "comparison"]
+  },
+  {
+    "id": 10,
+    "category": "subject-vs-disjunctive",
+    "english": "you (informal) → you",
+    "french": "tu → toi",
+    "pronunciation": "too ... twah",
+    "tags": ["grammar", "pronoun", "comparison"]
+  },
+  {
+    "id": 11,
+    "category": "subject-vs-disjunctive",
+    "english": "he → him",
+    "french": "il → lui",
+    "pronunciation": "eel ... lwee",
+    "tags": ["grammar", "pronoun", "comparison"]
+  },
+  {
+    "id": 12,
+    "category": "subject-vs-disjunctive",
+    "english": "she → her",
+    "french": "elle → elle",
+    "pronunciation": "el ... el",
+    "tags": ["grammar", "pronoun", "comparison"]
+  },
+  {
+    "id": 13,
+    "category": "subject-vs-disjunctive",
+    "english": "we → us",
+    "french": "nous → nous",
+    "pronunciation": "noo ... noo",
+    "tags": ["grammar", "pronoun", "comparison"]
+  },
+  {
+    "id": 14,
+    "category": "subject-vs-disjunctive",
+    "english": "you (formal/plural) → you",
+    "french": "vous → vous",
+    "pronunciation": "voo ... voo",
+    "tags": ["grammar", "pronoun", "comparison"]
+  },
+  {
+    "id": 15,
+    "category": "subject-vs-disjunctive",
+    "english": "they (masculine / mixed) → them",
+    "french": "ils → eux",
+    "pronunciation": "eel ... uh",
+    "tags": ["grammar", "pronoun", "comparison"]
+  },
+  {
+    "id": 16,
+    "category": "subject-vs-disjunctive",
+    "english": "they (feminine) → them",
+    "french": "elles → elles",
+    "pronunciation": "el ... el",
+    "tags": ["grammar", "pronoun", "comparison"]
+  }
+]

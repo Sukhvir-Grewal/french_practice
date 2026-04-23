@@ -1,0 +1,10 @@
+[
+  { "id": 1, "category": "transport", "english": "car", "french": "la voiture", "pronunciation": "la vwah-tur" },
+  { "id": 2, "category": "transport", "english": "plane", "french": "l’avion", "pronunciation": "la-vyon" },
+  { "id": 3, "category": "transport", "english": "bus", "french": "l’autobus", "pronunciation": "lo-toh-bus" },
+  { "id": 4, "category": "transport", "english": "boat", "french": "le bateau", "pronunciation": "luh ba-toh" },
+  { "id": 5, "category": "transport", "english": "bicycle", "french": "le vélo", "pronunciation": "luh vay-loh" },
+  { "id": 6, "category": "transport", "english": "taxi", "french": "le taxi", "pronunciation": "luh tak-see" },
+  { "id": 7, "category": "transport", "english": "train", "french": "le train", "pronunciation": "luh trahn" },
+  { "id": 8, "category": "transport", "english": "subway / metro", "french": "le métro", "pronunciation": "luh may-troh" }
+]

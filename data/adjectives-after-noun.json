@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "category": "adjectives-after-noun-masc",
+    "english": "proud",
+    "french": "fier",
+    "pronunciation": "fee-air",
+    "tags": ["vocabulary", "adjective", "after-noun", "masculine"]
+  },
+  {
+    "id": 2,
+    "category": "adjectives-after-noun-fem",
+    "english": "proud",
+    "french": "fière",
+    "pronunciation": "fee-air",
+    "tags": ["vocabulary", "adjective", "after-noun", "feminine"]
+  },
+  {
+    "id": 3,
+    "category": "adjectives-after-noun-masc",
+    "english": "foreign",
+    "french": "étranger",
+    "pronunciation": "ay-trahn-zhay",
+    "tags": ["vocabulary", "adjective", "after-noun", "masculine"]
+  },
+  {
+    "id": 4,
+    "category": "adjectives-after-noun-fem",
+    "english": "foreign",
+    "french": "étrangère",
+    "pronunciation": "ay-trahn-zhair",
+    "tags": ["vocabulary", "adjective", "after-noun", "feminine"]
+  },
+  {
+    "id": 5,
+    "category": "adjectives-after-noun-masc",
+    "english": "liar",
+    "french": "menteur",
+    "pronunciation": "mahn-tuhr",
+    "tags": ["vocabulary", "adjective", "after-noun", "masculine"]
+  },
+  {
+    "id": 6,
+    "category": "adjectives-after-noun-fem",
+    "english": "liar",
+    "french": "menteuse",
+    "pronunciation": "mahn-tuhz",
+    "tags": ["vocabulary", "adjective", "after-noun", "feminine"]
+  },
+  {
+    "id": 7,
+    "category": "adjectives-after-noun-masc",
+    "english": "superior",
+    "french": "supérieur",
+    "pronunciation": "soo-pay-ree-uhr",
+    "tags": ["vocabulary", "adjective", "after-noun", "masculine"]
+  },
+  {
+    "id": 8,
+    "category": "adjectives-after-noun-fem",
+    "english": "superior",
+    "french": "supérieure",
+    "pronunciation": "soo-pay-ree-uhr",
+    "tags": ["vocabulary", "adjective", "after-noun", "feminine"]
+  },
+  {
+    "id": 9,
+    "category": "adjectives-after-noun-masc",
+    "english": "best / better",
+    "french": "meilleur",
+    "pronunciation": "may-yuhr",
+    "tags": ["vocabulary", "adjective", "after-noun", "masculine"]
+  },
+  {
+    "id": 10,
+    "category": "adjectives-after-noun-fem",
+    "english": "best / better",
+    "french": "meilleure",
+    "pronunciation": "may-yuhr",
+    "tags": ["vocabulary", "adjective", "after-noun", "feminine"]
+  },
+  {
+    "id": 11,
+    "category": "adjectives-after-noun-masc",
+    "english": "happy",
+    "french": "heureux",
+    "pronunciation": "uh-ruh",
+    "tags": ["vocabulary", "adjective", "after-noun", "masculine"]
+  },
+  {
+    "id": 12,
+    "category": "adjectives-after-noun-fem",
+    "english": "happy",
+    "french": "heureuse",
+    "pronunciation": "uh-ruhz",
+    "tags": ["vocabulary", "adjective", "after-noun", "feminine"]
+  },
+  {
+    "id": 13,
+    "category": "adjectives-after-noun-masc",
+    "english": "false",
+    "french": "faux",
+    "pronunciation": "foh",
+    "tags": ["vocabulary", "adjective", "after-noun", "masculine"]
+  },
+  {
+    "id": 14,
+    "category": "adjectives-after-noun-fem",
+    "english": "false",
+    "french": "fausse",
+    "pronunciation": "fohs",
+    "tags": ["vocabulary", "adjective", "after-noun", "feminine"]
+  },
+  {
+    "id": 15,
+    "category": "adjectives-after-noun-masc",
+    "english": "favorite",
+    "french": "favori",
+    "pronunciation": "fah-vo-ree",
+    "tags": ["vocabulary", "adjective", "after-noun", "masculine"]
+  },
+  {
+    "id": 16,
+    "category": "adjectives-after-noun-fem",
+    "english": "favorite",
+    "french": "favorite",
+    "pronunciation": "fah-vo-reet",
+    "tags": ["vocabulary", "adjective", "after-noun", "feminine"]
+  },
+  {
+    "id": 17,
+    "category": "adjectives-after-noun-masc",
+    "english": "fresh",
+    "french": "frais",
+    "pronunciation": "fray",
+    "tags": ["vocabulary", "adjective", "after-noun", "masculine"]
+  },
+  {
+    "id": 18,
+    "category": "adjectives-after-noun-fem",
+    "english": "fresh",
+    "french": "fraîche",
+    "pronunciation": "fresh",
+    "tags": ["vocabulary", "adjective", "after-noun", "feminine"]
+  },
+  {
+    "id": 19,
+    "category": "adjectives-after-noun-masc",
+    "english": "frank",
+    "french": "franc",
+    "pronunciation": "frahn",
+    "tags": ["vocabulary", "adjective", "after-noun", "masculine"]
+  },
+  {
+    "id": 20,
+    "category": "adjectives-after-noun-fem",
+    "english": "frank",
+    "french": "franche",
+    "pronunciation": "frahnsh",
+    "tags": ["vocabulary", "adjective", "after-noun", "feminine"]
+  },
+  {
+    "id": 21,
+    "category": "adjectives-after-noun-masc",
+    "english": "cunning",
+    "french": "malin",
+    "pronunciation": "mah-lan",
+    "tags": ["vocabulary", "adjective", "after-noun", "masculine"]
+  },
+  {
+    "id": 22,
+    "category": "adjectives-after-noun-fem",
+    "english": "cunning",
+    "french": "maligne",
+    "pronunciation": "mah-leen",
+    "tags": ["vocabulary", "adjective", "after-noun", "feminine"]
+  }
+]

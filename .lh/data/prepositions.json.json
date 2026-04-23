@@ -1,0 +1,18 @@
+{
+    "sourceFile": "data/prepositions.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1776373694592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1776373694592,
+            "name": "Commit-0",
+            "content": "[\r\n  {\r\n    \"id\": 1,\r\n    \"english\": \"to, at\",\r\n    \"french\": \"à\",\r\n    \"pronunciation\": \"ah\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\"]\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"english\": \"with\",\r\n    \"french\": \"avec\",\r\n    \"pronunciation\": \"ah-vek\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\"]\r\n  },\r\n  {\r\n    \"id\": 3,\r\n    \"english\": \"for\",\r\n    \"french\": \"pour\",\r\n    \"pronunciation\": \"poor\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\"]\r\n  },\r\n  {\r\n    \"id\": 4,\r\n    \"english\": \"in\",\r\n    \"french\": \"dans\",\r\n    \"pronunciation\": \"dahn\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\"]\r\n  },\r\n  {\r\n    \"id\": 5,\r\n    \"english\": \"in (countries)\",\r\n    \"french\": \"en\",\r\n    \"pronunciation\": \"ahn\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\", \"countries\"]\r\n  },\r\n  {\r\n    \"id\": 6,\r\n    \"english\": \"in front of\",\r\n    \"french\": \"devant\",\r\n    \"pronunciation\": \"duh-vahn\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\", \"position\"]\r\n  },\r\n  {\r\n    \"id\": 7,\r\n    \"english\": \"behind\",\r\n    \"french\": \"derrière\",\r\n    \"pronunciation\": \"deh-ryair\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\", \"position\"]\r\n  },\r\n  {\r\n    \"id\": 8,\r\n    \"english\": \"under\",\r\n    \"french\": \"sous\",\r\n    \"pronunciation\": \"soo\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\", \"position\"]\r\n  },\r\n  {\r\n    \"id\": 9,\r\n    \"english\": \"on\",\r\n    \"french\": \"sur\",\r\n    \"pronunciation\": \"suur\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\", \"position\"]\r\n  },\r\n  {\r\n    \"id\": 10,\r\n    \"english\": \"at the place, house, office\",\r\n    \"french\": \"chez\",\r\n    \"pronunciation\": \"shay\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\", \"place\"]\r\n  },\r\n  {\r\n    \"id\": 11,\r\n    \"english\": \"of, from\",\r\n    \"french\": \"de\",\r\n    \"pronunciation\": \"duh\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\"]\r\n  },\r\n  {\r\n    \"id\": 12,\r\n    \"english\": \"before\",\r\n    \"french\": \"avant\",\r\n    \"pronunciation\": \"ah-vahn\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\", \"time\"]\r\n  },\r\n  {\r\n    \"id\": 13,\r\n    \"english\": \"by\",\r\n    \"french\": \"par\",\r\n    \"pronunciation\": \"par\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\"]\r\n  },\r\n  {\r\n    \"id\": 14,\r\n    \"english\": \"during\",\r\n    \"french\": \"pendant\",\r\n    \"pronunciation\": \"pahn-dahn\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\", \"time\"]\r\n  },\r\n  {\r\n    \"id\": 15,\r\n    \"english\": \"since\",\r\n    \"french\": \"depuis\",\r\n    \"pronunciation\": \"duh-pwee\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\", \"time\"]\r\n  },\r\n  {\r\n    \"id\": 16,\r\n    \"english\": \"towards\",\r\n    \"french\": \"vers\",\r\n    \"pronunciation\": \"vair\",\r\n    \"audio\": \"\",\r\n    \"tags\": [\"preposition\", \"direction\"]\r\n  }\r\n]"
+        }
+    ]
+}

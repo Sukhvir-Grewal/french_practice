@@ -1,0 +1,18 @@
+{
+    "sourceFile": "data/contracted-articles.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1776379621246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1776379621246,
+            "name": "Commit-0",
+            "content": "[\r\n  {\r\n    \"id\": 1,\r\n    \"category\": \"de\",\r\n    \"english\": \"of / from the (masculine singular)\",\r\n    \"french\": \"du\",\r\n    \"pronunciation\": \"doo\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\"]\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"category\": \"de\",\r\n    \"english\": \"of / from the (feminine singular)\",\r\n    \"french\": \"de la\",\r\n    \"pronunciation\": \"duh lah\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\"]\r\n  },\r\n  {\r\n    \"id\": 3,\r\n    \"category\": \"de\",\r\n    \"english\": \"of / from the (plural)\",\r\n    \"french\": \"des\",\r\n    \"pronunciation\": \"day\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\"]\r\n  },\r\n  {\r\n    \"id\": 4,\r\n    \"category\": \"a\",\r\n    \"english\": \"to / at the (masculine singular)\",\r\n    \"french\": \"au\",\r\n    \"pronunciation\": \"oh\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\"]\r\n  },\r\n  {\r\n    \"id\": 5,\r\n    \"category\": \"a\",\r\n    \"english\": \"to / at the (feminine singular)\",\r\n    \"french\": \"à la\",\r\n    \"pronunciation\": \"ah lah\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\"]\r\n  },\r\n  {\r\n    \"id\": 6,\r\n    \"category\": \"a\",\r\n    \"english\": \"to / at the (plural)\",\r\n    \"french\": \"aux\",\r\n    \"pronunciation\": \"oh\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\"]\r\n  },\r\n\r\n  {\r\n    \"id\": 7,\r\n    \"category\": \"de-examples\",\r\n    \"english\": \"from the park\",\r\n    \"french\": \"du parc\",\r\n    \"pronunciation\": \"doo park\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\", \"example\"]\r\n  },\r\n  {\r\n    \"id\": 8,\r\n    \"category\": \"de-examples\",\r\n    \"english\": \"from the house\",\r\n    \"french\": \"de la maison\",\r\n    \"pronunciation\": \"duh lah may-zon\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\", \"example\"]\r\n  },\r\n  {\r\n    \"id\": 9,\r\n    \"category\": \"de-examples\",\r\n    \"english\": \"from the schools\",\r\n    \"french\": \"des écoles\",\r\n    \"pronunciation\": \"day zay-kol\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\", \"example\"]\r\n  },\r\n  {\r\n    \"id\": 10,\r\n    \"category\": \"a-examples\",\r\n    \"english\": \"to the park\",\r\n    \"french\": \"au parc\",\r\n    \"pronunciation\": \"oh park\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\", \"example\"]\r\n  },\r\n  {\r\n    \"id\": 11,\r\n    \"category\": \"a-examples\",\r\n    \"english\": \"at the house\",\r\n    \"french\": \"à la maison\",\r\n    \"pronunciation\": \"ah lah may-zon\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\", \"example\"]\r\n  },\r\n  {\r\n    \"id\": 12,\r\n    \"category\": \"a-examples\",\r\n    \"english\": \"to the schools\",\r\n    \"french\": \"aux écoles\",\r\n    \"pronunciation\": \"oh zay-kol\",\r\n    \"tags\": [\"grammar\", \"contracted-articles\", \"example\"]\r\n  }\r\n]"
+        }
+    ]
+}

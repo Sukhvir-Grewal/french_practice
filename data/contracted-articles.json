@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "category": "de",
+    "english": "of / from the (masculine singular)",
+    "french": "du",
+    "pronunciation": "doo",
+    "tags": ["grammar", "contracted-articles"]
+  },
+  {
+    "id": 2,
+    "category": "de",
+    "english": "of / from the (feminine singular)",
+    "french": "de la",
+    "pronunciation": "duh lah",
+    "tags": ["grammar", "contracted-articles"]
+  },
+  {
+    "id": 3,
+    "category": "de",
+    "english": "of / from the (plural)",
+    "french": "des",
+    "pronunciation": "day",
+    "tags": ["grammar", "contracted-articles"]
+  },
+  {
+    "id": 4,
+    "category": "a",
+    "english": "to / at the (masculine singular)",
+    "french": "au",
+    "pronunciation": "oh",
+    "tags": ["grammar", "contracted-articles"]
+  },
+  {
+    "id": 5,
+    "category": "a",
+    "english": "to / at the (feminine singular)",
+    "french": "à la",
+    "pronunciation": "ah lah",
+    "tags": ["grammar", "contracted-articles"]
+  },
+  {
+    "id": 6,
+    "category": "a",
+    "english": "to / at the (plural)",
+    "french": "aux",
+    "pronunciation": "oh",
+    "tags": ["grammar", "contracted-articles"]
+  },
+
+  {
+    "id": 7,
+    "category": "de-examples",
+    "english": "from the park",
+    "french": "du parc",
+    "pronunciation": "doo park",
+    "tags": ["grammar", "contracted-articles", "example"]
+  },
+  {
+    "id": 8,
+    "category": "de-examples",
+    "english": "from the house",
+    "french": "de la maison",
+    "pronunciation": "duh lah may-zon",
+    "tags": ["grammar", "contracted-articles", "example"]
+  },
+  {
+    "id": 9,
+    "category": "de-examples",
+    "english": "from the schools",
+    "french": "des écoles",
+    "pronunciation": "day zay-kol",
+    "tags": ["grammar", "contracted-articles", "example"]
+  },
+  {
+    "id": 10,
+    "category": "a-examples",
+    "english": "to the park",
+    "french": "au parc",
+    "pronunciation": "oh park",
+    "tags": ["grammar", "contracted-articles", "example"]
+  },
+  {
+    "id": 11,
+    "category": "a-examples",
+    "english": "at the house",
+    "french": "à la maison",
+    "pronunciation": "ah lah may-zon",
+    "tags": ["grammar", "contracted-articles", "example"]
+  },
+  {
+    "id": 12,
+    "category": "a-examples",
+    "english": "to the schools",
+    "french": "aux écoles",
+    "pronunciation": "oh zay-kol",
+    "tags": ["grammar", "contracted-articles", "example"]
+  }
+]

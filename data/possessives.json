@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "category": "possessives",
+    "english": "my (masculine singular)",
+    "french": "mon",
+    "pronunciation": "mon",
+    "tags": ["grammar", "possessive"]
+  },
+  {
+    "id": 2,
+    "category": "possessives",
+    "english": "my (feminine singular)",
+    "french": "ma",
+    "pronunciation": "ma",
+    "tags": ["grammar", "possessive"]
+  },
+  {
+    "id": 3,
+    "category": "possessives",
+    "english": "my (plural)",
+    "french": "mes",
+    "pronunciation": "may",
+    "tags": ["grammar", "possessive"]
+  },
+
+  {
+    "id": 4,
+    "category": "possessives",
+    "english": "your (informal masculine singular)",
+    "french": "ton",
+    "pronunciation": "ton",
+    "tags": ["grammar", "possessive"]
+  },
+  {
+    "id": 5,
+    "category": "possessives",
+    "english": "your (informal feminine singular)",
+    "french": "ta",
+    "pronunciation": "ta",
+    "tags": ["grammar", "possessive"]
+  },
+  {
+    "id": 6,
+    "category": "possessives",
+    "english": "your (informal plural)",
+    "french": "tes",
+    "pronunciation": "tay",
+    "tags": ["grammar", "possessive"]
+  },
+
+  {
+    "id": 7,
+    "category": "possessives",
+    "english": "your (formal singular)",
+    "french": "votre",
+    "pronunciation": "voh-truh",
+    "tags": ["grammar", "possessive"]
+  },
+  {
+    "id": 8,
+    "category": "possessives",
+    "english": "your (formal/plural)",
+    "french": "vos",
+    "pronunciation": "voh",
+    "tags": ["grammar", "possessive"]
+  },
+
+  {
+    "id": 9,
+    "category": "possessives",
+    "english": "our",
+    "french": "notre",
+    "pronunciation": "noh-truh",
+    "tags": ["grammar", "possessive"]
+  },
+  {
+    "id": 10,
+    "category": "possessives",
+    "english": "our (plural nouns)",
+    "french": "nos",
+    "pronunciation": "noh",
+    "tags": ["grammar", "possessive"]
+  },
+
+  {
+    "id": 11,
+    "category": "possessives",
+    "english": "their (singular noun)",
+    "french": "leur",
+    "pronunciation": "luhr",
+    "tags": ["grammar", "possessive"]
+  },
+  {
+    "id": 12,
+    "category": "possessives",
+    "english": "their (plural nouns)",
+    "french": "leurs",
+    "pronunciation": "luhr",
+    "tags": ["grammar", "possessive"]
+  },
+
+  {
+    "id": 13,
+    "category": "possessives",
+    "english": "his / her (masculine singular)",
+    "french": "son",
+    "pronunciation": "son",
+    "tags": ["grammar", "possessive"]
+  },
+  {
+    "id": 14,
+    "category": "possessives",
+    "english": "his / her (feminine singular)",
+    "french": "sa",
+    "pronunciation": "sa",
+    "tags": ["grammar", "possessive"]
+  },
+  {
+    "id": 15,
+    "category": "possessives",
+    "english": "his / her (plural)",
+    "french": "ses",
+    "pronunciation": "say",
+    "tags": ["grammar", "possessive"]
+  },
+
+  {
+    "id": 16,
+    "category": "possessives-examples",
+    "english": "my female friend",
+    "french": "mon amie",
+    "pronunciation": "mon ah-mee",
+    "tags": ["grammar", "possessive", "example"]
+  },
+  {
+    "id": 17,
+    "category": "possessives-examples",
+    "english": "your school",
+    "french": "ton école",
+    "pronunciation": "ton ay-kol",
+    "tags": ["grammar", "possessive", "example"]
+  },
+  {
+    "id": 18,
+    "category": "possessives-examples",
+    "english": "his / her idea",
+    "french": "son idée",
+    "pronunciation": "son ee-day",
+    "tags": ["grammar", "possessive", "example"]
+  }
+]

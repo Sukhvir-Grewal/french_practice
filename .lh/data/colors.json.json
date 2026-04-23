@@ -1,0 +1,18 @@
+{
+    "sourceFile": "data/colors.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1776379479557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1776379479557,
+            "name": "Commit-0",
+            "content": "[\r\n  {\r\n    \"id\": 1,\r\n    \"category\": \"colors\",\r\n    \"english\": \"red\",\r\n    \"french\": \"rouge\",\r\n    \"pronunciation\": \"roozh\",\r\n    \"tags\": [\"vocabulary\", \"color\"]\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"category\": \"colors\",\r\n    \"english\": \"orange\",\r\n    \"french\": \"orange\",\r\n    \"pronunciation\": \"oh-rahnzh\",\r\n    \"tags\": [\"vocabulary\", \"color\"]\r\n  },\r\n  {\r\n    \"id\": 3,\r\n    \"category\": \"colors\",\r\n    \"english\": \"yellow\",\r\n    \"french\": \"jaune\",\r\n    \"pronunciation\": \"zhohn\",\r\n    \"tags\": [\"vocabulary\", \"color\"]\r\n  },\r\n  {\r\n    \"id\": 4,\r\n    \"category\": \"colors\",\r\n    \"english\": \"pink\",\r\n    \"french\": \"rose\",\r\n    \"pronunciation\": \"rohz\",\r\n    \"tags\": [\"vocabulary\", \"color\"]\r\n  },\r\n  {\r\n    \"id\": 5,\r\n    \"category\": \"colors\",\r\n    \"english\": \"green\",\r\n    \"french\": \"vert\",\r\n    \"pronunciation\": \"vehr\",\r\n    \"tags\": [\"vocabulary\", \"color\"]\r\n  },\r\n  {\r\n    \"id\": 6,\r\n    \"category\": \"colors\",\r\n    \"english\": \"blue\",\r\n    \"french\": \"bleu\",\r\n    \"pronunciation\": \"bluh\",\r\n    \"tags\": [\"vocabulary\", \"color\"]\r\n  },\r\n  {\r\n    \"id\": 7,\r\n    \"category\": \"colors\",\r\n    \"english\": \"purple\",\r\n    \"french\": \"violet\",\r\n    \"pronunciation\": \"vee-oh-lay\",\r\n    \"tags\": [\"vocabulary\", \"color\"]\r\n  },\r\n  {\r\n    \"id\": 8,\r\n    \"category\": \"colors\",\r\n    \"english\": \"white\",\r\n    \"french\": \"blanc\",\r\n    \"pronunciation\": \"blahn\",\r\n    \"tags\": [\"vocabulary\", \"color\"]\r\n  },\r\n  {\r\n    \"id\": 9,\r\n    \"category\": \"colors\",\r\n    \"english\": \"brown\",\r\n    \"french\": \"marron\",\r\n    \"pronunciation\": \"mah-rohn\",\r\n    \"tags\": [\"vocabulary\", \"color\"]\r\n  },\r\n  {\r\n    \"id\": 10,\r\n    \"category\": \"colors\",\r\n    \"english\": \"black\",\r\n    \"french\": \"noir\",\r\n    \"pronunciation\": \"nwar\",\r\n    \"tags\": [\"vocabulary\", \"color\"]\r\n  }\r\n]"
+        }
+    ]
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1,
+    "category": "adjectives-masc",
+    "english": "big / tall",
+    "french": "grand",
+    "pronunciation": "grahn",
+    "tags": ["vocabulary", "adjective", "masculine"]
+  },
+  {
+    "id": 2,
+    "category": "adjectives-fem",
+    "english": "big / tall",
+    "french": "grande",
+    "pronunciation": "grahnd",
+    "tags": ["vocabulary", "adjective", "feminine"]
+  },
+  {
+    "id": 3,
+    "category": "adjectives-masc",
+    "english": "small",
+    "french": "petit",
+    "pronunciation": "puh-tee",
+    "tags": ["vocabulary", "adjective", "masculine"]
+  },
+  {
+    "id": 4,
+    "category": "adjectives-fem",
+    "english": "small",
+    "french": "petite",
+    "pronunciation": "puh-teet",
+    "tags": ["vocabulary", "adjective", "feminine"]
+  },
+  {
+    "id": 5,
+    "category": "adjectives-masc",
+    "english": "high",
+    "french": "haut",
+    "pronunciation": "oh",
+    "tags": ["vocabulary", "adjective", "masculine"]
+  },
+  {
+    "id": 6,
+    "category": "adjectives-fem",
+    "english": "high",
+    "french": "haute",
+    "pronunciation": "oht",
+    "tags": ["vocabulary", "adjective", "feminine"]
+  },
+  {
+    "id": 7,
+    "category": "adjectives-masc",
+    "english": "low",
+    "french": "bas",
+    "pronunciation": "bah",
+    "tags": ["vocabulary", "adjective", "masculine"]
+  },
+  {
+    "id": 8,
+    "category": "adjectives-fem",
+    "english": "low",
+    "french": "basse",
+    "pronunciation": "bahs",
+    "tags": ["vocabulary", "adjective", "feminine"]
+  },
+  {
+    "id": 9,
+    "category": "adjectives-masc",
+    "english": "long",
+    "french": "long",
+    "pronunciation": "lon",
+    "tags": ["vocabulary", "adjective", "masculine"]
+  },
+  {
+    "id": 10,
+    "category": "adjectives-fem",
+    "english": "long",
+    "french": "longue",
+    "pronunciation": "long",
+    "tags": ["vocabulary", "adjective", "feminine"]
+  },
+  {
+    "id": 11,
+    "category": "adjectives-masc",
+    "english": "short",
+    "french": "court",
+    "pronunciation": "koor",
+    "tags": ["vocabulary", "adjective", "masculine"]
+  },
+  {
+    "id": 12,
+    "category": "adjectives-fem",
+    "english": "short",
+    "french": "courte",
+    "pronunciation": "koort",
+    "tags": ["vocabulary", "adjective", "feminine"]
+  },
+  {
+    "id": 13,
+    "category": "adjectives-common",
+    "english": "large",
+    "french": "large",
+    "pronunciation": "larzh",
+    "tags": ["vocabulary", "adjective", "common"]
+  },
+  {
+    "id": 14,
+    "category": "adjectives-masc",
+    "english": "narrow",
+    "french": "étroit",
+    "pronunciation": "ay-trwah",
+    "tags": ["vocabulary", "adjective", "masculine"]
+  },
+  {
+    "id": 15,
+    "category": "adjectives-fem",
+    "english": "narrow",
+    "french": "étroite",
+    "pronunciation": "ay-trwaht",
+    "tags": ["vocabulary", "adjective", "feminine"]
+  },
+  {
+    "id": 16,
+    "category": "adjectives-masc",
+    "english": "fat",
+    "french": "gros",
+    "pronunciation": "groh",
+    "tags": ["vocabulary", "adjective", "masculine"]
+  },
+  {
+    "id": 17,
+    "category": "adjectives-fem",
+    "english": "fat",
+    "french": "grosse",
+    "pronunciation": "grohs",
+    "tags": ["vocabulary", "adjective", "feminine"]
+  },
+  {
+    "id": 18,
+    "category": "adjectives-common",
+    "english": "slim",
+    "french": "mince",
+    "pronunciation": "mans",
+    "tags": ["vocabulary", "adjective", "common"]
+  },
+  {
+    "id": 19,
+    "category": "shapes-common",
+    "english": "square",
+    "french": "carré",
+    "pronunciation": "kah-ray",
+    "tags": ["vocabulary", "shape", "common"]
+  },
+  {
+    "id": 20,
+    "category": "shapes-common",
+    "english": "rectangle / rectangular",
+    "french": "rectangulaire",
+    "pronunciation": "rek-tahn-gyoo-lair",
+    "tags": ["vocabulary", "shape", "common"]
+  },
+  {
+    "id": 21,
+    "category": "adjectives-masc",
+    "english": "pointed",
+    "french": "pointu",
+    "pronunciation": "pwan-too",
+    "tags": ["vocabulary", "adjective", "masculine"]
+  },
+  {
+    "id": 22,
+    "category": "adjectives-fem",
+    "english": "pointed",
+    "french": "pointue",
+    "pronunciation": "pwan-too",
+    "tags": ["vocabulary", "adjective", "feminine"]
+  },
+  {
+    "id": 23,
+    "category": "adjectives-masc",
+    "english": "thick",
+    "french": "épais",
+    "pronunciation": "ay-pay",
+    "tags": ["vocabulary", "adjective", "masculine"]
+  },
+  {
+    "id": 24,
+    "category": "adjectives-fem",
+    "english": "thick",
+    "french": "épaisse",
+    "pronunciation": "ay-pehs",
+    "tags": ["vocabulary", "adjective", "feminine"]
+  },
+  {
+    "id": 25,
+    "category": "adjectives-masc",
+    "english": "round",
+    "french": "rond",
+    "pronunciation": "ron",
+    "tags": ["vocabulary", "adjective", "masculine"]
+  },
+  {
+    "id": 26,
+    "category": "adjectives-fem",
+    "english": "round",
+    "french": "ronde",
+    "pronunciation": "rond",
+    "tags": ["vocabulary", "adjective", "feminine"]
+  }
+]

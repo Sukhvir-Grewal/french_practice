@@ -1,0 +1,18 @@
+{
+    "sourceFile": "data/transportation.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1776950187786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1776950187786,
+            "name": "Commit-0",
+            "content": "[\r\n  { \"id\": 1, \"category\": \"transport\", \"english\": \"car\", \"french\": \"la voiture\", \"pronunciation\": \"la vwah-tur\" },\r\n  { \"id\": 2, \"category\": \"transport\", \"english\": \"plane\", \"french\": \"l’avion\", \"pronunciation\": \"la-vyon\" },\r\n  { \"id\": 3, \"category\": \"transport\", \"english\": \"bus\", \"french\": \"l’autobus\", \"pronunciation\": \"lo-toh-bus\" },\r\n  { \"id\": 4, \"category\": \"transport\", \"english\": \"boat\", \"french\": \"le bateau\", \"pronunciation\": \"luh ba-toh\" },\r\n  { \"id\": 5, \"category\": \"transport\", \"english\": \"bicycle\", \"french\": \"le vélo\", \"pronunciation\": \"luh vay-loh\" },\r\n  { \"id\": 6, \"category\": \"transport\", \"english\": \"taxi\", \"french\": \"le taxi\", \"pronunciation\": \"luh tak-see\" },\r\n  { \"id\": 7, \"category\": \"transport\", \"english\": \"train\", \"french\": \"le train\", \"pronunciation\": \"luh trahn\" },\r\n  { \"id\": 8, \"category\": \"transport\", \"english\": \"subway / metro\", \"french\": \"le métro\", \"pronunciation\": \"luh may-troh\" }\r\n]"
+        }
+    ]
+}

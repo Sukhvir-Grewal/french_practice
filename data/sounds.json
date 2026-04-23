@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "pattern": "eu",
+    "soundHint": "uh",
+    "examples": [
+      { "french": "jeune", "english": "young" },
+      { "french": "bleu", "english": "blue" }
+    ],
+    "tags": ["sound"]
+  },
+  {
+    "id": 2,
+    "pattern": "au",
+    "soundHint": "o",
+    "examples": [
+      { "french": "faux", "english": "false" },
+      { "french": "automne", "english": "autumn" },
+      { "french": "au revoir", "english": "goodbye" }
+    ],
+    "tags": ["sound"]
+  },
+  {
+    "id": 3,
+    "pattern": "an / am / en / em",
+    "soundHint": "an",
+    "examples": [
+      { "french": "charmant", "english": "charming" },
+      { "french": "vent", "english": "wind" },
+      { "french": "langue", "english": "language" }
+    ],
+    "tags": ["sound", "nasal"]
+  },
+  {
+    "id": 4,
+    "pattern": "ain / aim / ein / eim / in / im / yn / ym",
+    "soundHint": "in",
+    "examples": [
+      { "french": "vin", "english": "wine" },
+      { "french": "pain", "english": "bread" },
+      { "french": "malin", "english": "clever" },
+      { "french": "matin", "english": "morning" }
+    ],
+    "tags": ["sound", "nasal"]
+  },
+  {
+    "id": 5,
+    "pattern": "ui",
+    "soundHint": "wee",
+    "examples": [
+      { "french": "oui", "english": "yes" },
+      { "french": "nuit", "english": "night" }
+    ],
+    "tags": ["sound"]
+  },
+  {
+    "id": 6,
+    "pattern": "ou",
+    "soundHint": "oo",
+    "examples": [
+      { "french": "rouge", "english": "red" },
+      { "french": "ou", "english": "or" },
+      { "french": "où", "english": "where" }
+    ],
+    "tags": ["sound"]
+  },
+  {
+    "id": 7,
+    "pattern": "on / om",
+    "soundHint": "on",
+    "examples": [
+      { "french": "ronde", "english": "round" },
+      { "french": "roman", "english": "novel" }
+    ],
+    "tags": ["sound", "nasal"]
+  },
+  {
+    "id": 8,
+    "pattern": "eau",
+    "soundHint": "o",
+    "examples": [
+      { "french": "chapeau", "english": "hat" },
+      { "french": "bateau", "english": "boat" },
+      { "french": "château", "english": "castle" },
+      { "french": "gâteau", "english": "cake" }
+    ],
+    "tags": ["sound"]
+  },
+  {
+    "id": 9,
+    "pattern": "oi",
+    "soundHint": "wah",
+    "examples": [
+      { "french": "poisson", "english": "fish" },
+      { "french": "oiseau", "english": "bird" }
+    ],
+    "tags": ["sound"]
+  },
+  {
+    "id": 10,
+    "pattern": "ion",
+    "soundHint": "ee-on",
+    "examples": [
+      { "french": "éducation", "english": "education" },
+      { "french": "station", "english": "station" },
+      { "french": "compétition", "english": "competition" }
+    ],
+    "tags": ["sound"]
+  },
+  {
+    "id": 11,
+    "pattern": "ga",
+    "soundHint": "ga",
+    "examples": [
+      { "french": "gare", "english": "station" }
+    ],
+    "tags": ["sound", "g-pattern"]
+  },
+  {
+    "id": 12,
+    "pattern": "go",
+    "soundHint": "go",
+    "examples": [
+      { "french": "gomme", "english": "eraser" }
+    ],
+    "tags": ["sound", "g-pattern"]
+  },
+  {
+    "id": 13,
+    "pattern": "gu",
+    "soundHint": "gu",
+    "examples": [
+      { "french": "guide", "english": "guide" }
+    ],
+    "tags": ["sound", "g-pattern"]
+  },
+  {
+    "id": 14,
+    "pattern": "gi",
+    "soundHint": "jee",
+    "examples": [
+      { "french": "girafe", "english": "giraffe" }
+    ],
+    "tags": ["sound", "g-pattern"]
+  },
+  {
+    "id": 15,
+    "pattern": "ge",
+    "soundHint": "juh",
+    "examples": [
+      { "french": "genou", "english": "knee" }
+    ],
+    "tags": ["sound", "g-pattern"]
+  },
+  {
+    "id": 16,
+    "pattern": "gn",
+    "soundHint": "ny",
+    "examples": [
+      { "french": "montagne", "english": "mountain" }
+    ],
+    "tags": ["sound", "g-pattern"]
+  },
+  {
+    "id": 17,
+    "pattern": "ca",
+    "soundHint": "ka",
+    "examples": [
+      { "french": "cadeau", "english": "gift" }
+    ],
+    "tags": ["sound", "c-pattern"]
+  },
+  {
+    "id": 18,
+    "pattern": "cu",
+    "soundHint": "ku",
+    "examples": [
+      { "french": "cube", "english": "cube" }
+    ],
+    "tags": ["sound", "c-pattern"]
+  },
+  {
+    "id": 19,
+    "pattern": "co",
+    "soundHint": "ko",
+    "examples": [
+      { "french": "colle", "english": "glue" }
+    ],
+    "tags": ["sound", "c-pattern"]
+  },
+  {
+    "id": 20,
+    "pattern": "ch",
+    "soundHint": "sh",
+    "examples": [
+      { "french": "chat", "english": "cat" }
+    ],
+    "tags": ["sound", "c-pattern"]
+  },
+  {
+    "id": 21,
+    "pattern": "ci",
+    "soundHint": "see",
+    "examples": [
+      { "french": "cinéma", "english": "cinema" }
+    ],
+    "tags": ["sound", "c-pattern"]
+  },
+  {
+    "id": 22,
+    "pattern": "ce",
+    "soundHint": "suh",
+    "examples": [
+      { "french": "cerise", "english": "cherry" }
+    ],
+    "tags": ["sound", "c-pattern"]
+  },
+  {
+    "id": 23,
+    "pattern": "ç",
+    "soundHint": "s",
+    "examples": [
+      { "french": "garçon", "english": "boy" }
+    ],
+    "tags": ["sound", "c-pattern"]
+  }
+]

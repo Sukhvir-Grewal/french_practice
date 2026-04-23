@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "english": "to, at",
+    "french": "à",
+    "pronunciation": "ah",
+    "audio": "",
+    "tags": ["preposition"]
+  },
+  {
+    "id": 2,
+    "english": "with",
+    "french": "avec",
+    "pronunciation": "ah-vek",
+    "audio": "",
+    "tags": ["preposition"]
+  },
+  {
+    "id": 3,
+    "english": "for",
+    "french": "pour",
+    "pronunciation": "poor",
+    "audio": "",
+    "tags": ["preposition"]
+  },
+  {
+    "id": 4,
+    "english": "in",
+    "french": "dans",
+    "pronunciation": "dahn",
+    "audio": "",
+    "tags": ["preposition"]
+  },
+  {
+    "id": 5,
+    "english": "in (countries)",
+    "french": "en",
+    "pronunciation": "ahn",
+    "audio": "",
+    "tags": ["preposition", "countries"]
+  },
+  {
+    "id": 6,
+    "english": "in front of",
+    "french": "devant",
+    "pronunciation": "duh-vahn",
+    "audio": "",
+    "tags": ["preposition", "position"]
+  },
+  {
+    "id": 7,
+    "english": "behind",
+    "french": "derrière",
+    "pronunciation": "deh-ryair",
+    "audio": "",
+    "tags": ["preposition", "position"]
+  },
+  {
+    "id": 8,
+    "english": "under",
+    "french": "sous",
+    "pronunciation": "soo",
+    "audio": "",
+    "tags": ["preposition", "position"]
+  },
+  {
+    "id": 9,
+    "english": "on",
+    "french": "sur",
+    "pronunciation": "suur",
+    "audio": "",
+    "tags": ["preposition", "position"]
+  },
+  {
+    "id": 10,
+    "english": "at the place, house, office",
+    "french": "chez",
+    "pronunciation": "shay",
+    "audio": "",
+    "tags": ["preposition", "place"]
+  },
+  {
+    "id": 11,
+    "english": "of, from",
+    "french": "de",
+    "pronunciation": "duh",
+    "audio": "",
+    "tags": ["preposition"]
+  },
+  {
+    "id": 12,
+    "english": "before",
+    "french": "avant",
+    "pronunciation": "ah-vahn",
+    "audio": "",
+    "tags": ["preposition", "time"]
+  },
+  {
+    "id": 13,
+    "english": "by",
+    "french": "par",
+    "pronunciation": "par",
+    "audio": "",
+    "tags": ["preposition"]
+  },
+  {
+    "id": 14,
+    "english": "during",
+    "french": "pendant",
+    "pronunciation": "pahn-dahn",
+    "audio": "",
+    "tags": ["preposition", "time"]
+  },
+  {
+    "id": 15,
+    "english": "since",
+    "french": "depuis",
+    "pronunciation": "duh-pwee",
+    "audio": "",
+    "tags": ["preposition", "time"]
+  },
+  {
+    "id": 16,
+    "english": "towards",
+    "french": "vers",
+    "pronunciation": "vair",
+    "audio": "",
+    "tags": ["preposition", "direction"]
+  }
+]

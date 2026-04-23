@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "englishCountry": "France",
+    "frenchCountry": "la France",
+    "nationalityMasc": "français",
+    "nationalityFem": "française",
+    "pronunciation": {
+      "country": "la frahns",
+      "masc": "fron-say",
+      "fem": "fron-sez"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 2,
+    "englishCountry": "Switzerland",
+    "frenchCountry": "la Suisse",
+    "nationalityMasc": "suisse",
+    "nationalityFem": "suisse",
+    "pronunciation": {
+      "country": "la swees",
+      "masc": "swees",
+      "fem": "swees"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 3,
+    "englishCountry": "Italy",
+    "frenchCountry": "l’Italie",
+    "nationalityMasc": "italien",
+    "nationalityFem": "italienne",
+    "pronunciation": {
+      "country": "lee-ta-lee",
+      "masc": "ee-ta-lee-ahn",
+      "fem": "ee-ta-lee-enn"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 4,
+    "englishCountry": "Germany",
+    "frenchCountry": "l’Allemagne",
+    "nationalityMasc": "allemand",
+    "nationalityFem": "allemande",
+    "pronunciation": {
+      "country": "la-la-man-yuh",
+      "masc": "al-mahn",
+      "fem": "al-mahnd"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 5,
+    "englishCountry": "Spain",
+    "frenchCountry": "l’Espagne",
+    "nationalityMasc": "espagnol",
+    "nationalityFem": "espagnole",
+    "pronunciation": {
+      "country": "les-pan-yuh",
+      "masc": "es-pan-yol",
+      "fem": "es-pan-yol"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 6,
+    "englishCountry": "Belgium",
+    "frenchCountry": "la Belgique",
+    "nationalityMasc": "belge",
+    "nationalityFem": "belge",
+    "pronunciation": {
+      "country": "la bel-zheek",
+      "masc": "belzh",
+      "fem": "belzh"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 7,
+    "englishCountry": "China",
+    "frenchCountry": "la Chine",
+    "nationalityMasc": "chinois",
+    "nationalityFem": "chinoise",
+    "pronunciation": {
+      "country": "la sheen",
+      "masc": "shee-nwah",
+      "fem": "shee-nwahz"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 8,
+    "englishCountry": "Great Britain",
+    "frenchCountry": "la Grande-Bretagne",
+    "nationalityMasc": "britannique",
+    "nationalityFem": "britannique",
+    "pronunciation": {
+      "country": "la grahnd breh-tan-yuh",
+      "masc": "bree-ta-neek",
+      "fem": "bree-ta-neek"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 9,
+    "englishCountry": "England",
+    "frenchCountry": "l’Angleterre",
+    "nationalityMasc": "anglais",
+    "nationalityFem": "anglaise",
+    "pronunciation": {
+      "country": "lon-gluh-tehr",
+      "masc": "ahn-glay",
+      "fem": "ahn-glehz"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 10,
+    "englishCountry": "Russia",
+    "frenchCountry": "la Russie",
+    "nationalityMasc": "russe",
+    "nationalityFem": "russe",
+    "pronunciation": {
+      "country": "la roo-see",
+      "masc": "rooss",
+      "fem": "rooss"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 11,
+    "englishCountry": "Mexico",
+    "frenchCountry": "le Mexique",
+    "nationalityMasc": "mexicain",
+    "nationalityFem": "mexicaine",
+    "pronunciation": {
+      "country": "luh mek-seek",
+      "masc": "mek-see-kahn",
+      "fem": "mek-see-kenn"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 12,
+    "englishCountry": "Brazil",
+    "frenchCountry": "le Brésil",
+    "nationalityMasc": "brésilien",
+    "nationalityFem": "brésilienne",
+    "pronunciation": {
+      "country": "luh bray-zeel",
+      "masc": "bray-zee-lee-ahn",
+      "fem": "bray-zee-lee-enn"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 13,
+    "englishCountry": "United States",
+    "frenchCountry": "les États-Unis",
+    "nationalityMasc": "américain",
+    "nationalityFem": "américaine",
+    "pronunciation": {
+      "country": "lay zay-tah-zew-nee",
+      "masc": "ah-may-ree-kahn",
+      "fem": "ah-may-ree-kenn"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 14,
+    "englishCountry": "Canada",
+    "frenchCountry": "le Canada",
+    "nationalityMasc": "canadien",
+    "nationalityFem": "canadienne",
+    "pronunciation": {
+      "country": "luh ka-na-da",
+      "masc": "ka-na-dyee-ahn",
+      "fem": "ka-na-dyee-enn"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 15,
+    "englishCountry": "Australia",
+    "frenchCountry": "l’Australie",
+    "nationalityMasc": "australien",
+    "nationalityFem": "australienne",
+    "pronunciation": {
+      "country": "los-tra-lee",
+      "masc": "os-tra-lee-ahn",
+      "fem": "os-tra-lee-enn"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 16,
+    "englishCountry": "Africa",
+    "frenchCountry": "l’Afrique",
+    "nationalityMasc": "africain",
+    "nationalityFem": "africaine",
+    "pronunciation": {
+      "country": "la-freek",
+      "masc": "a-free-kahn",
+      "fem": "a-free-kenn"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 17,
+    "englishCountry": "India",
+    "frenchCountry": "l’Inde",
+    "nationalityMasc": "indien",
+    "nationalityFem": "indienne",
+    "pronunciation": {
+      "country": "land",
+      "masc": "in-dyee-ahn",
+      "fem": "in-dyee-enn"
+    },
+    "tags": ["nationality"]
+  },
+  {
+    "id": 18,
+    "englishCountry": "Austria",
+    "frenchCountry": "l’Autriche",
+    "nationalityMasc": "autrichien",
+    "nationalityFem": "autrichienne",
+    "pronunciation": {
+      "country": "lo-tree-sh",
+      "masc": "o-tree-shee-ahn",
+      "fem": "o-tree-shee-enn"
+    },
+    "tags": ["nationality"]
+  }
+]

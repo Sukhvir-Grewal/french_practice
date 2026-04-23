@@ -1,0 +1,42 @@
+{
+  "deck": "numbers",
+  "language": "fr",
+  "base": [
+    { "number": 0, "french": "zéro", "english": "zero", "pronunciation": "zay-ro" },
+    { "number": 1, "french": "un", "english": "one", "pronunciation": "uhn" },
+    { "number": 2, "french": "deux", "english": "two", "pronunciation": "duh" },
+    { "number": 3, "french": "trois", "english": "three", "pronunciation": "trwah" },
+    { "number": 4, "french": "quatre", "english": "four", "pronunciation": "katr" },
+    { "number": 5, "french": "cinq", "english": "five", "pronunciation": "sank" },
+    { "number": 6, "french": "six", "english": "six", "pronunciation": "sees" },
+    { "number": 7, "french": "sept", "english": "seven", "pronunciation": "set" },
+    { "number": 8, "french": "huit", "english": "eight", "pronunciation": "weet" },
+    { "number": 9, "french": "neuf", "english": "nine", "pronunciation": "nuhf" },
+    { "number": 10, "french": "dix", "english": "ten", "pronunciation": "dees" },
+    { "number": 11, "french": "onze", "english": "eleven", "pronunciation": "onz" },
+    { "number": 12, "french": "douze", "english": "twelve", "pronunciation": "dooz" },
+    { "number": 13, "french": "treize", "english": "thirteen", "pronunciation": "trehz" },
+    { "number": 14, "french": "quatorze", "english": "fourteen", "pronunciation": "kah-torz" },
+    { "number": 15, "french": "quinze", "english": "fifteen", "pronunciation": "kanz" },
+    { "number": 16, "french": "seize", "english": "sixteen", "pronunciation": "sehz" },
+    { "number": 17, "french": "dix-sept", "english": "seventeen", "pronunciation": "dees-set" },
+    { "number": 18, "french": "dix-huit", "english": "eighteen", "pronunciation": "deez-weet" },
+    { "number": 19, "french": "dix-neuf", "english": "nineteen", "pronunciation": "dees-nuhf" },
+    { "number": 20, "french": "vingt", "english": "twenty", "pronunciation": "van" },
+    { "number": 30, "french": "trente", "english": "thirty", "pronunciation": "tront" },
+    { "number": 40, "french": "quarante", "english": "forty", "pronunciation": "kah-ront" },
+    { "number": 50, "french": "cinquante", "english": "fifty", "pronunciation": "sank-ont" },
+    { "number": 60, "french": "soixante", "english": "sixty", "pronunciation": "swah-sont" },
+    { "number": 100, "french": "cent", "english": "hundred", "pronunciation": "son" },
+    { "number": 1000, "french": "mille", "english": "thousand", "pronunciation": "meel" },
+    { "number": 1000000, "french": "un million", "english": "one million", "pronunciation": "uhn mee-lyon" },
+    { "number": 1000000000, "french": "un milliard", "english": "one billion", "pronunciation": "uhn mee-yard" }
+  ],
+  "ranges": [
+    { "id": "1-10", "label": "1 to 10", "min": 1, "max": 10 },
+    { "id": "11-20", "label": "11 to 20", "min": 11, "max": 20 },
+    { "id": "21-50", "label": "21 to 50", "min": 21, "max": 50 },
+    { "id": "51-100", "label": "51 to 100", "min": 51, "max": 100 },
+    { "id": "101-1000", "label": "101 to 1000", "min": 101, "max": 1000 }
+  ]
+}

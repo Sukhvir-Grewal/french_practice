@@ -1,0 +1,229 @@
+[
+  {
+    "id": 1,
+    "category": "etre",
+    "english": "I am",
+    "french": "je suis",
+    "pronunciation": "zhuh swee",
+    "tags": ["grammar", "etre"]
+  },
+  {
+    "id": 2,
+    "category": "etre",
+    "english": "You are (informal)",
+    "french": "tu es",
+    "pronunciation": "too ay",
+    "tags": ["grammar", "etre"]
+  },
+  {
+    "id": 3,
+    "category": "etre",
+    "english": "You are (formal/plural)",
+    "french": "vous êtes",
+    "pronunciation": "voo zet",
+    "tags": ["grammar", "etre"]
+  },
+  {
+    "id": 4,
+    "category": "etre",
+    "english": "He is",
+    "french": "il est",
+    "pronunciation": "eel eh",
+    "tags": ["grammar", "etre"]
+  },
+  {
+    "id": 5,
+    "category": "etre",
+    "english": "She is",
+    "french": "elle est",
+    "pronunciation": "el eh",
+    "tags": ["grammar", "etre"]
+  },
+  {
+    "id": 6,
+    "category": "etre",
+    "english": "They are (masculine)",
+    "french": "ils sont",
+    "pronunciation": "eel son",
+    "tags": ["grammar", "etre"]
+  },
+  {
+    "id": 7,
+    "category": "etre",
+    "english": "They are (feminine)",
+    "french": "elles sont",
+    "pronunciation": "el son",
+    "tags": ["grammar", "etre"]
+  },
+  {
+    "id": 8,
+    "category": "etre",
+    "english": "We are",
+    "french": "nous sommes",
+    "pronunciation": "noo som",
+    "tags": ["grammar", "etre"]
+  },
+
+  {
+    "id": 9,
+    "category": "avoir",
+    "english": "I have",
+    "french": "j’ai",
+    "pronunciation": "zhay",
+    "tags": ["grammar", "avoir"]
+  },
+  {
+    "id": 10,
+    "category": "avoir",
+    "english": "You have (informal)",
+    "french": "tu as",
+    "pronunciation": "too ah",
+    "tags": ["grammar", "avoir"]
+  },
+  {
+    "id": 11,
+    "category": "avoir",
+    "english": "You have (formal/plural)",
+    "french": "vous avez",
+    "pronunciation": "voo zah-vay",
+    "tags": ["grammar", "avoir"]
+  },
+  {
+    "id": 12,
+    "category": "avoir",
+    "english": "He has",
+    "french": "il a",
+    "pronunciation": "eel ah",
+    "tags": ["grammar", "avoir"]
+  },
+  {
+    "id": 13,
+    "category": "avoir",
+    "english": "She has",
+    "french": "elle a",
+    "pronunciation": "el ah",
+    "tags": ["grammar", "avoir"]
+  },
+  {
+    "id": 14,
+    "category": "avoir",
+    "english": "They have (masculine)",
+    "french": "ils ont",
+    "pronunciation": "eel zon",
+    "tags": ["grammar", "avoir"]
+  },
+  {
+    "id": 15,
+    "category": "avoir",
+    "english": "They have (feminine)",
+    "french": "elles ont",
+    "pronunciation": "el zon",
+    "tags": ["grammar", "avoir"]
+  },
+  {
+    "id": 16,
+    "category": "avoir",
+    "english": "We have",
+    "french": "nous avons",
+    "pronunciation": "noo zah-von",
+    "tags": ["grammar", "avoir"]
+  },
+
+  {
+    "id": 17,
+    "category": "demonstratives",
+    "english": "this / that (masculine)",
+    "french": "ce",
+    "pronunciation": "suh",
+    "tags": ["grammar", "demonstratives"]
+  },
+  {
+    "id": 18,
+    "category": "demonstratives",
+    "english": "this / that (feminine)",
+    "french": "cette",
+    "pronunciation": "set",
+    "tags": ["grammar", "demonstratives"]
+  },
+  {
+    "id": 19,
+    "category": "demonstratives",
+    "english": "this / that (masculine before vowel)",
+    "french": "cet",
+    "pronunciation": "set",
+    "tags": ["grammar", "demonstratives"]
+  },
+  {
+    "id": 20,
+    "category": "demonstratives",
+    "english": "these / those",
+    "french": "ces",
+    "pronunciation": "say",
+    "tags": ["grammar", "demonstratives"]
+  },
+
+  {
+    "id": 21,
+    "category": "aller",
+    "english": "I am going / I go",
+    "french": "je vais",
+    "pronunciation": "zhuh vay",
+    "tags": ["grammar", "aller"]
+  },
+  {
+    "id": 22,
+    "category": "aller",
+    "english": "You are going / You go (informal)",
+    "french": "tu vas",
+    "pronunciation": "too vah",
+    "tags": ["grammar", "aller"]
+  },
+  {
+    "id": 23,
+    "category": "aller",
+    "english": "He is going / He goes",
+    "french": "il va",
+    "pronunciation": "eel vah",
+    "tags": ["grammar", "aller"]
+  },
+  {
+    "id": 24,
+    "category": "aller",
+    "english": "She is going / She goes",
+    "french": "elle va",
+    "pronunciation": "el vah",
+    "tags": ["grammar", "aller"]
+  },
+  {
+    "id": 25,
+    "category": "aller",
+    "english": "We are going / We go",
+    "french": "nous allons",
+    "pronunciation": "noo zah-lon",
+    "tags": ["grammar", "aller"]
+  },
+  {
+    "id": 26,
+    "category": "aller",
+    "english": "You are going / You go (formal/plural)",
+    "french": "vous allez",
+    "pronunciation": "voo zah-lay",
+    "tags": ["grammar", "aller"]
+  },
+  {
+    "id": 27,
+    "category": "aller",
+    "english": "They are going / They go (masculine)",
+    "french": "ils vont",
+    "pronunciation": "eel von",
+    "tags": ["grammar", "aller"]
+  },
+  {
+    "id": 28,
+    "category": "aller",
+    "english": "They are going / They go (feminine)",
+    "french": "elles vont",
+    "pronunciation": "el von",
+    "tags": ["grammar", "aller"]
+  }
+]

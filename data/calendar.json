@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "category": "days",
+    "english": "Monday",
+    "french": "lundi",
+    "pronunciation": "lun-dee",
+    "tags": ["calendar", "days"]
+  },
+  {
+    "id": 2,
+    "category": "days",
+    "english": "Tuesday",
+    "french": "mardi",
+    "pronunciation": "mar-dee",
+    "tags": ["calendar", "days"]
+  },
+  {
+    "id": 3,
+    "category": "days",
+    "english": "Wednesday",
+    "french": "mercredi",
+    "pronunciation": "mehr-cruh-dee",
+    "tags": ["calendar", "days"]
+  },
+  {
+    "id": 4,
+    "category": "days",
+    "english": "Thursday",
+    "french": "jeudi",
+    "pronunciation": "zhuh-dee",
+    "tags": ["calendar", "days"]
+  },
+  {
+    "id": 5,
+    "category": "days",
+    "english": "Friday",
+    "french": "vendredi",
+    "pronunciation": "vahn-druh-dee",
+    "tags": ["calendar", "days"]
+  },
+  {
+    "id": 6,
+    "category": "days",
+    "english": "Saturday",
+    "french": "samedi",
+    "pronunciation": "sam-duh-dee",
+    "tags": ["calendar", "days"]
+  },
+  {
+    "id": 7,
+    "category": "days",
+    "english": "Sunday",
+    "french": "dimanche",
+    "pronunciation": "dee-mahnsh",
+    "tags": ["calendar", "days"]
+  },
+  {
+    "id": 8,
+    "category": "days-extra",
+    "english": "Today",
+    "french": "aujourd’hui",
+    "pronunciation": "oh-zhoor-dwee",
+    "tags": ["calendar", "days-extra"]
+  },
+  {
+    "id": 9,
+    "category": "days-extra",
+    "english": "Yesterday",
+    "french": "hier",
+    "pronunciation": "ee-air",
+    "tags": ["calendar", "days-extra"]
+  },
+  {
+    "id": 10,
+    "category": "days-extra",
+    "english": "Day before yesterday",
+    "french": "avant-hier",
+    "pronunciation": "ah-vahn-yee-air",
+    "tags": ["calendar", "days-extra"]
+  },
+  {
+    "id": 11,
+    "category": "days-extra",
+    "english": "Tomorrow",
+    "french": "demain",
+    "pronunciation": "duh-mahn",
+    "tags": ["calendar", "days-extra"]
+  },
+  {
+    "id": 12,
+    "category": "days-question",
+    "english": "What day is today?",
+    "french": "C’est quel jour aujourd’hui ?",
+    "pronunciation": "say kel zhoor oh-zhoor-dwee",
+    "tags": ["calendar", "days-question"]
+  },
+  {
+    "id": 13,
+    "category": "months",
+    "english": "January",
+    "french": "janvier",
+    "pronunciation": "zhahn-vyay",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 14,
+    "category": "months",
+    "english": "February",
+    "french": "février",
+    "pronunciation": "fay-vree-yay",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 15,
+    "category": "months",
+    "english": "March",
+    "french": "mars",
+    "pronunciation": "mars",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 16,
+    "category": "months",
+    "english": "April",
+    "french": "avril",
+    "pronunciation": "ah-vreel",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 17,
+    "category": "months",
+    "english": "May",
+    "french": "mai",
+    "pronunciation": "may",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 18,
+    "category": "months",
+    "english": "June",
+    "french": "juin",
+    "pronunciation": "zhwan",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 19,
+    "category": "months",
+    "english": "July",
+    "french": "juillet",
+    "pronunciation": "zhwee-yay",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 20,
+    "category": "months",
+    "english": "August",
+    "french": "août",
+    "pronunciation": "oot",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 21,
+    "category": "months",
+    "english": "September",
+    "french": "septembre",
+    "pronunciation": "sep-tahmbr",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 22,
+    "category": "months",
+    "english": "October",
+    "french": "octobre",
+    "pronunciation": "ok-tohbr",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 23,
+    "category": "months",
+    "english": "November",
+    "french": "novembre",
+    "pronunciation": "noh-vahmbr",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 24,
+    "category": "months",
+    "english": "December",
+    "french": "décembre",
+    "pronunciation": "day-sahmbr",
+    "tags": ["calendar", "months"]
+  },
+  {
+    "id": 25,
+    "category": "months-question",
+    "english": "What month is it?",
+    "french": "C’est quel mois ?",
+    "pronunciation": "say kel mwah",
+    "tags": ["calendar", "months-question"]
+  }
+]
